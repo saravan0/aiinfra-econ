@@ -1,0 +1,29 @@
+source_file,source_column,master_column,download_date,source_url,units,missing_fraction
+wgi_voice.csv,Country Name,country,2025-11-10,,,0.06095100864553314
+wgi_voice.csv,Country Code,iso3,2025-11-10,,,0.0
+wgi_voice.csv,Year,year,2025-11-10,,,0.0
+wgi_voice.csv,Estimate,voice_accountability,2025-11-10,,,0.27219020172910663
+wgi_polstab.csv,Estimate,political_stability,2025-11-10,,,0.27593659942363113
+wgi_goveff.csv,Estimate,gov_effectiveness,2025-11-10,,,0.28472622478386167
+wgi_regqual.csv,Estimate,reg_quality,2025-11-10,,,0.2844380403458213
+wgi_rulelaw.csv,Estimate,rule_of_law,2025-11-10,,,0.26829971181556195
+wgi_corrupt.csv,Estimate,control_corruption,2025-11-10,,,0.2812680115273775
+worldbank_wdi.csv,BN.CAB.XOKA.CD,current_account_balance_usd,2025-11-10,,,0.3659942363112392
+worldbank_wdi.csv,BX.KLT.DINV.CD.WD,fdi_inflow_usd,2025-11-10,,,0.1244956772334294
+worldbank_wdi.csv,DT.DOD.DECT.CD,external_debt_usd,2025-11-10,,,0.552449567723343
+worldbank_wdi.csv,EN.GHG.CO2.RT.GDP.PP.KD,carbon_intensity_gdp,2025-11-10,,,0.17881844380403458
+worldbank_wdi.csv,FI.RES.TOTL.CD,total_reserves_usd,2025-11-10,,,0.37838616714697404
+worldbank_wdi.csv,FP.CPI.TOTL.ZG,inflation_consumer_prices_pct,2025-11-10,,,0.33587896253602306
+worldbank_wdi.csv,GC.DOD.TOTL.GD.ZS,central_government_debt_pct_gdp,2025-11-10,,,0.8262247838616714
+worldbank_wdi.csv,NE.CON.GOVT.ZS,government_final_consumption_pct_gdp,2025-11-10,,,0.2420749279538905
+worldbank_wdi.csv,NE.EXP.GNFS.CD,exports_usd,2025-11-10,,,0.2043227665706052
+worldbank_wdi.csv,NE.GDI.TOTL.ZS,gross_capital_formation_pct_gdp,2025-11-10,,,0.23832853025936598
+worldbank_wdi.csv,NE.IMP.GNFS.CD,imports_usd,2025-11-10,,,0.19697406340057638
+worldbank_wdi.csv,NE.TRD.GNFS.ZS,trade_exposure,2025-11-10,,,0.21368876080691643
+worldbank_wdi.csv,NY.GDP.DEFL.KD.ZG,inflation_gdp_deflator_pct,2025-11-10,,,0.08731988472622479
+worldbank_wdi.csv,NY.GDP.DEFL.ZS,gdp_deflator_index,2025-11-10,,,0.2576368876080692
+worldbank_wdi.csv,NY.GDP.MKTP.CD,gdp_usd,2025-11-10,,,0.07593659942363112
+worldbank_wdi.csv,NY.GDP.MKTP.KD.ZG,gdp_growth_pct,2025-11-10,,,0.08631123919308357
+worldbank_wdi.csv,NY.GDP.PCAP.CD,gdp_per_capita_usd,2025-11-10,,,0.07593659942363112
+worldbank_wdi.csv,SL.EMP.TOTL.SP.NE.ZS,employment_ratio_pct,2025-11-10,,,0.5027377521613833
+worldbank_wdi.csv,TM.TAX.MANF.WM.AR.ZS,avg_tariff_rate_manufactured_pct,2025-11-10,,,0.5177233429394813

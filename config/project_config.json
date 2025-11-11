@@ -1,0 +1,13 @@
+{
+  "baseline": "lean",
+  "include_optional_fields": false,
+  "imputation_policy": "country_mean_WGI_only",
+  "vif_threshold": 10,
+  "ci_fail_missing_threshold": 0.40,
+  "locked_columns_excluded": [
+    "central_government_debt_pct_gdp",
+    "external_debt_usd",
+    "avg_tariff_rate_manufactured_pct",
+    "employment_ratio_pct"
+  ]
+}

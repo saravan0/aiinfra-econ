@@ -1,0 +1,35 @@
+source_file,source_column,master_column
+# --- WGI mappings ---
+wgi_voice.csv,Country Name,country
+wgi_voice.csv,Country Code,iso3
+wgi_voice.csv,Year,year
+wgi_voice.csv,Estimate,voice_accountability
+wgi_polstab.csv,Estimate,political_stability
+wgi_goveff.csv,Estimate,gov_effectiveness
+wgi_regqual.csv,Estimate,reg_quality
+wgi_rulelaw.csv,Estimate,rule_of_law
+wgi_corrupt.csv,Estimate,control_corruption
+
+# --- WDI economic mappings (renamed from worldbank_gdp -> worldbank_wdi) ---
+worldbank_wdi.csv,NY.GDP.MKTP.CD,gdp_usd
+worldbank_wdi.csv,NY.GDP.PCAP.CD,gdp_per_capita_usd
+worldbank_wdi.csv,NY.GDP.MKTP.KD.ZG,gdp_growth_pct
+worldbank_wdi.csv,NY.GDP.DEFL.ZS,gdp_deflator_index
+worldbank_wdi.csv,NY.GDP.DEFL.KD.ZG,inflation_gdp_deflator_pct
+worldbank_wdi.csv,FP.CPI.TOTL.ZG,inflation_consumer_prices_pct
+worldbank_wdi.csv,SL.EMP.TOTL.SP.NE.ZS,employment_ratio_pct
+worldbank_wdi.csv,BX.KLT.DINV.CD.WD,fdi_inflow_usd
+worldbank_wdi.csv,NE.GDI.TOTL.ZS,gross_capital_formation_pct_gdp
+worldbank_wdi.csv,NE.CON.GOVT.ZS,government_final_consumption_pct_gdp
+worldbank_wdi.csv,GC.DOD.TOTL.GD.ZS,central_government_debt_pct_gdp
+worldbank_wdi.csv,BN.CAB.XOKA.CD,current_account_balance_usd
+worldbank_wdi.csv,FI.RES.TOTL.CD,total_reserves_usd
+worldbank_wdi.csv,DT.DOD.DECT.CD,external_debt_usd
+worldbank_wdi.csv,NE.EXP.GNFS.CD,exports_usd
+worldbank_wdi.csv,NE.IMP.GNFS.CD,imports_usd
+worldbank_wdi.csv,NE.TRD.GNFS.ZS,trade_exposure
+worldbank_wdi.csv,EN.ATM.CO2E.PC,co2_emissions_tonnes
+worldbank_wdi.csv,EN.ATM.CO2E.KT,co2_emissions_total
+worldbank_wdi.csv,EN.GHG.CO2.RT.GDP.PP.KD,carbon_intensity_gdp
+worldbank_wdi.csv,TM.TAX.MANF.WM.AR.ZS,avg_tariff_rate_manufactured_pct
+worldbank_wdi.csv,TM.TAX.MANF.WM,avg_tariff_rate_pct

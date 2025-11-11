@@ -1,0 +1,6 @@
+master_column,unit,base_year,conversion
+gdp_usd,current_usd,NA,none
+gdp_per_capita_usd,current_usd,NA,none
+gdp_growth_pct,percent,NA,none
+government_debt_gdp,percent_gdp,NA,none
+temp_anomaly_degC,degC,baseline_1951_1980,none

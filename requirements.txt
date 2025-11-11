@@ -1,0 +1,36 @@
+# ==== Core scientific stack ====
+pandas==2.2.3
+numpy==2.1.2
+
+# ==== Visualization & QA (optional but useful later) ====
+matplotlib==3.9.2
+
+# ==== Country / geo normalization ====
+pycountry==24.6.1
+
+# ==== Time and date utils ====
+python-dateutil==2.9.0.post0
+
+# ==== Logging / YAML config (for extensibility) ====
+PyYAML==6.0.2
+
+# ==== (optional) Jupyter and notebooks ====
+jupyterlab==4.2.5
+
+# ==== (optional) Git integration helpers ====
+GitPython==3.1.43
+
+# ==== (optional) Data validation ====
+openpyxl==3.1.5
+
+scipy
+
+statsmodels
+
+statsmodels dash plotly
+
+dash
+
+pandas
+
+plotly

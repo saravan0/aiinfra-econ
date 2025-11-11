@@ -1,0 +1,21 @@
+{
+  "generated_at": "2025-11-10T14:22:51Z",
+  "files": {
+    "data\\processed\\features.csv": {
+      "sha1": "9362f801fd03798a1bc4b212d6e920c570cdde1e",
+      "size": 4615665
+    },
+    "data\\processed\\features_lean.csv": {
+      "sha1": "b22e63b9a9eb3a8a3103789bcd8e9295ad5013d3",
+      "size": 1157726
+    },
+    "data\\interim\\wgi_econ_master.csv": {
+      "sha1": "941734508ac0f6ed3dc39c4790a8224828cd8361",
+      "size": 2256177
+    },
+    "data\\interim\\wgi_merged.csv": {
+      "sha1": "7b7aea89fa194572051f209eb2b28e58213a60e9",
+      "size": 648588
+    }
+  }
+}
