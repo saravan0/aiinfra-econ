@@ -1,0 +1,7 @@
+{
+  "coef": -0.47666488603018964,
+  "shrinkage": true,
+  "model_type": "ElasticNetCV",
+  "feature_index": 2,
+  "feature_name": "inflation_consumer_prices_pct"
+}

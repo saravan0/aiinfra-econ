@@ -1,0 +1,20 @@
+{
+  "variable": "trade_exposure",
+  "strategy": "within_entity",
+  "n_requested": 1000,
+  "n_used": 1000,
+  "observed_standardized_effect": 0.13623183109797551,
+  "empirical_p_two_sided": 0.0,
+  "empirical_p_one_sided_pos": 0.0,
+  "empirical_p_one_sided_neg": 1.0,
+  "observed_details": {
+    "coef": 1.2953647596218336,
+    "std_err": 0.25235351861389554,
+    "pvalue": 2.9381104524333826e-07,
+    "n_obs": 6341,
+    "sd_x": 0.5808680024761947,
+    "sd_y": 5.5232021351783205,
+    "standardized_effect": 0.13623183109797551
+  },
+  "generated_at": "2025-11-17T12:15:49.819625Z"
+}

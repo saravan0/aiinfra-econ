@@ -1,0 +1,10 @@
+{
+  "var": "inflation_consumer_prices_pct",
+  "n_obs": 3390,
+  "coef": -0.028691752015965143,
+  "pvalue": 1.3968154549455321e-05,
+  "std_err": 0.006594682848898306,
+  "standardized_effect": -0.08072335111525217,
+  "timestamp": "2025-11-16T14:19:36.483379+00:00",
+  "model_type": "WithinDemean_Aligned"
+}

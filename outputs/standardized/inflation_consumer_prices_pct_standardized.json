@@ -1,0 +1,56 @@
+{
+  "var": "inflation_consumer_prices_pct",
+  "sd_target": 5.5232021351783205,
+  "sd_var": 16.157686647591852,
+  "summary": {
+    "FE": {
+      "model_type": "RegressionResultsWrapper",
+      "coef": -0.027972993658411934,
+      "std_err": 0.006736245737870123,
+      "pvalue": 3.372968152969786e-05,
+      "n_obs": 3390,
+      "conf_int": [
+        -0.04118079149143996,
+        -0.01476519582538391
+      ],
+      "mapped_exog_name": "x3",
+      "mapped_index": 3,
+      "mapped_to_feature": "inflation_consumer_prices_pct",
+      "standardized": -0.08183275843716728,
+      "magnitude": "moderate"
+    },
+    "OLS": {
+      "model_type": "RegressionResultsWrapper",
+      "coef": -0.03003264844647955,
+      "std_err": 0.0068672512810809775,
+      "pvalue": 1.2237432550015198e-05,
+      "n_obs": 3390,
+      "conf_int": [
+        -0.04349221363018481,
+        -0.016573083262774287
+      ],
+      "mapped_exog_name": null,
+      "mapped_index": null,
+      "mapped_to_feature": null,
+      "standardized": -0.08785811399238892,
+      "magnitude": "moderate"
+    },
+    "ElasticNet": {
+      "model_type": "ElasticNetCV",
+      "coef": -0.47666488603018964,
+      "std_err": null,
+      "pvalue": null,
+      "n_obs": null,
+      "conf_int": null,
+      "mapped_exog_name": null,
+      "mapped_index": null,
+      "mapped_to_feature": null,
+      "standardized": -1.3944450476167896,
+      "magnitude": "large"
+    }
+  },
+  "ml_diag": {
+    "elasticnet_vs_ols_ratio": 15.871556811902304,
+    "elasticnet_shrinkage_abs": false
+  }
+}

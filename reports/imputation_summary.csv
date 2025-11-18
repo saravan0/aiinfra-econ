@@ -1,0 +1,8 @@
+predictor,present,n_nonnull,pct
+fdi_inflow_usd_ln_safe,True,5704,0.8219
+imports_usd_ln_safe,True,5573,0.803
+exports_usd_ln_safe,True,5522,0.7957
+current_account_balance_usd_ln_safe,True,1511,0.2177
+total_reserves_usd_ln_safe,True,4314,0.6216
+gdp_usd_ln_safe,True,6413,0.9241
+gdp_per_capita_usd_ln_safe,True,6413,0.9241

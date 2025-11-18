@@ -1,0 +1,10 @@
+{
+  "var": "trade_exposure",
+  "n_obs": 3390,
+  "coef": 3.4925845224224417,
+  "pvalue": 4.795530300647651e-15,
+  "std_err": 0.44387860765810255,
+  "standardized_effect": 0.3711509223110831,
+  "timestamp": "2025-11-16T14:19:36.472466+00:00",
+  "model_type": "WithinDemean_Aligned"
+}

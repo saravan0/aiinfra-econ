@@ -1,0 +1,13 @@
+{
+  "generated_at": "2025-11-15T11:44:16.417958Z",
+  "reports": {
+    "card": "reports\\robustness_card.md",
+    "plots": "reports\\robustness_plots.png",
+    "vif": "reports\\robustness_vif.csv"
+  },
+  "models": [
+    "robust_driscoll_linearmodels.joblib",
+    "robust_ols_cluster.joblib",
+    "robust_randomeffects_linearmodels.joblib"
+  ]
+}

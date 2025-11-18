@@ -1,0 +1,25 @@
+sources:
+- source_name: World Development Indicators (WDI)
+  canonical_id: wdi_worldbank
+  url: https://data.worldbank.org/indicator
+  access_method: api
+  api_details:
+    endpoint: https://api.worldbank.org/v2
+    format: csv/json
+    rate_limit: null
+  license: 'World Bank: http://www.worldbank.org/en/about/terms-and-conditions'
+  last_fetch: '2025-11-13T14:40:46.935424Z'
+  checksum: 8f2213912107c320d923c3667c17630a
+  contact: datacatalog@worldbank.org
+  notes: Multiple series (GDP, exports/imports, reserves). We fetch by series code
+    and expand to long format.
+- source_name: Worldwide Governance Indicators (WGI)
+  canonical_id: wgi
+  url: https://info.worldbank.org/governance/wgi/
+  access_method: http
+  license: 'World Bank: http://www.worldbank.org/en/about/terms-and-conditions'
+  last_fetch: '2025-11-13T14:40:49.104702Z'
+  checksum: 78f24916da5d104ec3d4a99405487855
+  contact: wgi@worldbank.org
+  notes: Voice, GovEffectiveness, RuleOfLaw, Control of Corruption — downloaded annual
+    CSVs.

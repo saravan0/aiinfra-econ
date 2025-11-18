@@ -1,0 +1,275 @@
+[
+  {
+    "variable": "trade_exposure",
+    "standardized_summary": {
+      "var": "trade_exposure",
+      "sd_target": 5.5232021351783205,
+      "sd_var": 0.5925754369108269,
+      "summary": {
+        "FE": {
+          "model_type": "RegressionResultsWrapper",
+          "coef": 3.5082166451640227,
+          "std_err": 0.45452263295447703,
+          "pvalue": 1.5628615029366757e-14,
+          "n_obs": 3390,
+          "conf_int": [
+            2.6170313647861057,
+            4.399401925541939
+          ],
+          "mapped_exog_name": "x2",
+          "mapped_index": 2,
+          "mapped_to_feature": "trade_exposure",
+          "standardized": 0.37639089796209096,
+          "magnitude": "large"
+        },
+        "OLS": {
+          "model_type": "RegressionResultsWrapper",
+          "coef": 0.6790422151109139,
+          "std_err": 0.22216162239797957,
+          "pvalue": 0.0022391994245330366,
+          "n_obs": 3390,
+          "conf_int": [
+            0.24361343646388695,
+            1.114470993757941
+          ],
+          "mapped_exog_name": null,
+          "mapped_index": null,
+          "mapped_to_feature": null,
+          "standardized": 0.07285334258136006,
+          "magnitude": "moderate"
+        },
+        "ElasticNet": {
+          "model_type": "ElasticNetCV",
+          "coef": 0.4068439118091507,
+          "std_err": null,
+          "pvalue": null,
+          "n_obs": null,
+          "conf_int": null,
+          "mapped_exog_name": null,
+          "mapped_index": null,
+          "mapped_to_feature": null,
+          "standardized": 0.043649626230279875,
+          "magnitude": "small"
+        }
+      },
+      "ml_diag": {
+        "elasticnet_vs_ols_ratio": 0.5991437686134099,
+        "elasticnet_shrinkage_abs": true
+      }
+    },
+    "fe_json": {
+      "coef": 3.5082166451640227,
+      "std_err": 0.45452263295447703,
+      "pvalue": 1.5628615029366757e-14,
+      "conf_int": [
+        2.6170313647861057,
+        4.399401925541939
+      ],
+      "n_obs": 3390,
+      "model_type": "RegressionResultsWrapper",
+      "mapped_exog_name": "x2",
+      "mapped_index": 2,
+      "mapped_to_feature": "trade_exposure"
+    },
+    "ols_json": {
+      "coef": 0.6790422151109139,
+      "std_err": 0.22216162239797957,
+      "pvalue": 0.0022391994245330366,
+      "conf_int": [
+        0.24361343646388695,
+        1.114470993757941
+      ],
+      "n_obs": 3390,
+      "model_type": "RegressionResultsWrapper"
+    },
+    "elasticnet_json": {
+      "coef": 0.4068439118091507,
+      "shrinkage": true,
+      "model_type": "ElasticNetCV",
+      "feature_index": 1,
+      "feature_name": "trade_exposure"
+    }
+  },
+  {
+    "variable": "gov_index_zmean",
+    "standardized_summary": {
+      "var": "gov_index_zmean",
+      "sd_target": 5.5232021351783205,
+      "sd_var": 0.9210834404139059,
+      "summary": {
+        "FE": {
+          "model_type": "RegressionResultsWrapper",
+          "coef": 1.658494898999204,
+          "std_err": 0.6780941334370445,
+          "pvalue": 0.014505934665765736,
+          "n_obs": 3390,
+          "conf_int": [
+            0.3289516230096059,
+            2.9880381749888025
+          ],
+          "mapped_exog_name": "x1",
+          "mapped_index": 1,
+          "mapped_to_feature": "gov_index_zmean",
+          "standardized": 0.2765808945773411,
+          "magnitude": "large"
+        },
+        "OLS": {
+          "model_type": "RegressionResultsWrapper",
+          "coef": -0.7811827533478354,
+          "std_err": 0.15581658176900612,
+          "pvalue": 5.345533021196165e-07,
+          "n_obs": 3390,
+          "conf_int": [
+            -1.0865776418092277,
+            -0.475787864886443
+          ],
+          "mapped_exog_name": null,
+          "mapped_index": null,
+          "mapped_to_feature": null,
+          "standardized": -0.13027488048333055,
+          "magnitude": "moderate"
+        },
+        "ElasticNet": {
+          "model_type": "ElasticNetCV",
+          "coef": -0.6956130023089342,
+          "std_err": null,
+          "pvalue": null,
+          "n_obs": null,
+          "conf_int": null,
+          "mapped_exog_name": null,
+          "mapped_index": null,
+          "mapped_to_feature": null,
+          "standardized": -0.1160047381359642,
+          "magnitude": "moderate"
+        }
+      },
+      "ml_diag": {
+        "elasticnet_vs_ols_ratio": 0.8904612900474522,
+        "elasticnet_shrinkage_abs": true
+      }
+    },
+    "fe_json": {
+      "coef": 1.658494898999204,
+      "std_err": 0.6780941334370445,
+      "pvalue": 0.014505934665765736,
+      "conf_int": [
+        0.3289516230096059,
+        2.9880381749888025
+      ],
+      "n_obs": 3390,
+      "model_type": "RegressionResultsWrapper",
+      "mapped_exog_name": "x1",
+      "mapped_index": 1,
+      "mapped_to_feature": "gov_index_zmean"
+    },
+    "ols_json": {
+      "coef": -0.7811827533478354,
+      "std_err": 0.15581658176900612,
+      "pvalue": 5.345533021196165e-07,
+      "conf_int": [
+        -1.0865776418092277,
+        -0.475787864886443
+      ],
+      "n_obs": 3390,
+      "model_type": "RegressionResultsWrapper"
+    },
+    "elasticnet_json": {
+      "coef": -0.6956130023089342,
+      "shrinkage": true,
+      "model_type": "ElasticNetCV",
+      "feature_index": 0,
+      "feature_name": "gov_index_zmean"
+    }
+  },
+  {
+    "variable": "inflation_consumer_prices_pct",
+    "standardized_summary": {
+      "var": "inflation_consumer_prices_pct",
+      "sd_target": 5.5232021351783205,
+      "sd_var": 16.157686647591852,
+      "summary": {
+        "FE": {
+          "model_type": "RegressionResultsWrapper",
+          "coef": -0.027972993658411934,
+          "std_err": 0.006736245737870123,
+          "pvalue": 3.372968152969786e-05,
+          "n_obs": 3390,
+          "conf_int": [
+            -0.04118079149143996,
+            -0.01476519582538391
+          ],
+          "mapped_exog_name": "x3",
+          "mapped_index": 3,
+          "mapped_to_feature": "inflation_consumer_prices_pct",
+          "standardized": -0.08183275843716728,
+          "magnitude": "moderate"
+        },
+        "OLS": {
+          "model_type": "RegressionResultsWrapper",
+          "coef": -0.03003264844647955,
+          "std_err": 0.0068672512810809775,
+          "pvalue": 1.2237432550015198e-05,
+          "n_obs": 3390,
+          "conf_int": [
+            -0.04349221363018481,
+            -0.016573083262774287
+          ],
+          "mapped_exog_name": null,
+          "mapped_index": null,
+          "mapped_to_feature": null,
+          "standardized": -0.08785811399238892,
+          "magnitude": "moderate"
+        },
+        "ElasticNet": {
+          "model_type": "ElasticNetCV",
+          "coef": -0.47666488603018964,
+          "std_err": null,
+          "pvalue": null,
+          "n_obs": null,
+          "conf_int": null,
+          "mapped_exog_name": null,
+          "mapped_index": null,
+          "mapped_to_feature": null,
+          "standardized": -1.3944450476167896,
+          "magnitude": "large"
+        }
+      },
+      "ml_diag": {
+        "elasticnet_vs_ols_ratio": 15.871556811902304,
+        "elasticnet_shrinkage_abs": false
+      }
+    },
+    "fe_json": {
+      "coef": -0.027972993658411934,
+      "std_err": 0.006736245737870123,
+      "pvalue": 3.372968152969786e-05,
+      "conf_int": [
+        -0.04118079149143996,
+        -0.01476519582538391
+      ],
+      "n_obs": 3390,
+      "model_type": "RegressionResultsWrapper",
+      "mapped_exog_name": "x3",
+      "mapped_index": 3,
+      "mapped_to_feature": "inflation_consumer_prices_pct"
+    },
+    "ols_json": {
+      "coef": -0.03003264844647955,
+      "std_err": 0.0068672512810809775,
+      "pvalue": 1.2237432550015198e-05,
+      "conf_int": [
+        -0.04349221363018481,
+        -0.016573083262774287
+      ],
+      "n_obs": 3390,
+      "model_type": "RegressionResultsWrapper"
+    },
+    "elasticnet_json": {
+      "coef": -0.47666488603018964,
+      "shrinkage": true,
+      "model_type": "ElasticNetCV",
+      "feature_index": 2,
+      "feature_name": "inflation_consumer_prices_pct"
+    }
+  }
+]

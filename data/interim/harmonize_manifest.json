@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-11-13T14:40:48.466824Z",
+  "files": {
+    "wdi_long": "S:\\aiinfra-econ\\data\\interim\\wdi_long.csv",
+    "master_raw": "S:\\aiinfra-econ\\data\\interim\\wgi_econ_master_raw.csv",
+    "missingness": "S:\\aiinfra-econ\\data\\interim\\wgi_econ_master_missingness.csv",
+    "panel_union": "S:\\aiinfra-econ\\data\\interim\\panel_union.csv",
+    "panel_core": "S:\\aiinfra-econ\\data\\interim\\panel_core.csv"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "saved_at": "2025-11-16T08:37:59.711238Z",
+  "config": {
+    "seed": 2025,
+    "data": {
+      "features_path": "data/processed/features_lean_imputed.csv",
+      "sample_filter": null
+    },
+    "target": {
+      "name": "gdp_growth_pct",
+      "dropna": true
+    },
+    "predictors": {
+      "baseline": [
+        "gov_index_zmean",
+        "trade_exposure",
+        "inflation_consumer_prices_pct"
+      ],
+      "extra_controls": []
+    },
+    "models": {
+      "ols": {
+        "run": true,
+        "cluster_on": "iso3"
+      },
+      "fixed_effects": {
+        "run": true,
+        "entity": "iso3",
+        "time": null
+      },
+      "elasticnet": {
+        "run": true,
+        "alpha": 1.0,
+        "l1_ratio": 0.5,
+        "cv": 5
+      }
+    },
+    "outputs": {
+      "reports_dir": "reports",
+      "models_dir": "models",
+      "model_table": "reports/model_table.csv",
+      "model_plots": "reports/model_plots.png"
+    },
+    "debug": {
+      "max_rows": null
+    },
+    "robustness": {
+      "extras_sample_threshold": 3000,
+      "imputation_strategy": "country_mean",
+      "fallback_impute": "global_mean"
+    }
+  }
+}

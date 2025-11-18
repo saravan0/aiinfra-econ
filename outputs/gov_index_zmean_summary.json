@@ -1,0 +1,34 @@
+{
+  "FE": {
+    "coef": 1.658494898999204,
+    "std_err": 0.6780941334370445,
+    "pvalue": 0.014505934665765736,
+    "conf_int": [
+      0.3289516230096059,
+      2.9880381749888025
+    ],
+    "n_obs": 3390,
+    "model_type": "RegressionResultsWrapper",
+    "mapped_exog_name": "x1",
+    "mapped_index": 1,
+    "mapped_to_feature": "gov_index_zmean"
+  },
+  "OLS": {
+    "coef": -0.7811827533478354,
+    "std_err": 0.15581658176900612,
+    "pvalue": 5.345533021196165e-07,
+    "conf_int": [
+      -1.0865776418092277,
+      -0.475787864886443
+    ],
+    "n_obs": 3390,
+    "model_type": "RegressionResultsWrapper"
+  },
+  "ElasticNet": {
+    "coef": -0.6956130023089342,
+    "shrinkage": true,
+    "model_type": "ElasticNetCV",
+    "feature_index": 0,
+    "feature_name": "gov_index_zmean"
+  }
+}

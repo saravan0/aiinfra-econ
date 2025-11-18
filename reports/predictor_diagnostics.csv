@@ -1,0 +1,11 @@
+predictor,present,n_nonnull,pct,dtype,n_strings,min,max,n_zero,n_neg,n_inf
+gov_index_zmean,True,5083,73.24,float64,0.0,-2.390373499410551,1.9770491176464984,0.0,2746.0,0.0
+trade_exposure,True,6818,98.24,float64,0.0,0.0,863.195098963242,1361.0,0.0,0.0
+inflation_consumer_prices_pct,True,4609,66.41,float64,0.0,-16.8596910540644,557.201817362051,0.0,272.0,0.0
+fdi_inflow_usd_ln_safe,True,5704,82.19,float64,0.0,10.360747138731888,28.76712384858899,0.0,0.0,0.0
+imports_usd_ln_safe,True,5573,80.3,float64,0.0,16.94667497410693,31.07536654316512,0.0,0.0,0.0
+exports_usd_ln_safe,True,5522,79.57,float64,0.0,15.910997186758287,31.10622093913439,0.0,0.0,0.0
+imports_usd_ln,False,0,0.0,,,,,,,
+exports_usd_ln,False,0,0.0,,,,,,,
+imports_usd,False,0,0.0,,,,,,,
+exports_usd,False,0,0.0,,,,,,,

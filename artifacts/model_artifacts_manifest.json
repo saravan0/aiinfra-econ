@@ -1,0 +1,12 @@
+{
+  "saved_at": "2025-11-16T08:38:02.252547Z",
+  "artifacts_dir": "S:\\aiinfra-econ\\artifacts",
+  "models_dir": "S:\\aiinfra-econ\\models",
+  "saved_files": {
+    "ols_result": "artifacts\\ols_result.joblib",
+    "fe_result": "artifacts\\fe_result.joblib",
+    "en_model": "artifacts\\en_model.joblib",
+    "feature_names.json": "artifacts\\feature_names.json"
+  },
+  "errors": {}
+}

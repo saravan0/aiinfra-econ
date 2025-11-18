@@ -1,0 +1,7 @@
+predictor,present,n_nonnull,pct,n_nonnull_imputed,pct_imputed
+gov_index_zmean,True,5083,73.24,5083,73.24
+trade_exposure,True,6818,98.24,6818,98.24
+inflation_consumer_prices_pct,True,4609,66.41,4609,66.41
+fdi_inflow_usd_ln_safe,True,5704,82.19,6643,95.72
+imports_usd_ln_safe,True,5573,80.3,6315,90.99
+exports_usd_ln_safe,True,5522,79.57,6265,90.27

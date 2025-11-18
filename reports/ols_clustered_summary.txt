@@ -1,0 +1,32 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         gdp_growth_pct   R-squared:                       0.034
+Model:                            OLS   Adj. R-squared:                  0.032
+Method:                 Least Squares   F-statistic:                     11.41
+Date:                Sat, 15 Nov 2025   Prob (F-statistic):           9.21e-11
+Time:                        09:06:18   Log-Likelihood:                -9994.2
+No. Observations:                3181   AIC:                         2.000e+04
+Df Residuals:                    3174   BIC:                         2.004e+04
+Df Model:                           6                                         
+Covariance Type:              cluster                                         
+=================================================================================================
+                                    coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+const                             4.4912      2.601      1.726      0.086      -0.643       9.625
+gov_index_zmean                  -0.9402      0.195     -4.824      0.000      -1.325      -0.556
+trade_exposure                    0.0055      0.003      2.135      0.034       0.000       0.011
+inflation_consumer_prices_pct    -0.0323      0.008     -4.245      0.000      -0.047      -0.017
+exports_usd_ln_safe               0.4334      0.501      0.865      0.388      -0.555       1.422
+imports_usd_ln_safe              -1.0180      0.572     -1.781      0.077      -2.146       0.110
+fdi_inflow_usd_ln_safe            0.5961      0.139      4.276      0.000       0.321       0.871
+==============================================================================
+Omnibus:                     1248.978   Durbin-Watson:                   1.782
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           213335.749
+Skew:                           0.747   Prob(JB):                         0.00
+Kurtosis:                      43.092   Cond. No.                     1.54e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.54e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

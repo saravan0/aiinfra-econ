@@ -1,0 +1,11 @@
+predictor,present,n_nonnull,pct_nonnull
+gov_index_zmean,True,5083,0.7324207492795389
+trade_exposure,True,6818,0.9824207492795389
+inflation_consumer_prices_pct,True,4609,0.664121037463977
+fdi_inflow_usd_ln_safe,True,5704,0.8219020172910663
+imports_usd_ln_safe,True,5573,0.8030259365994237
+exports_usd_ln_safe,True,5522,0.7956772334293948
+gdp_usd_ln_safe,True,6413,0.9240634005763688
+gdp_per_capita_usd_ln_safe,True,6413,0.9240634005763688
+total_reserves_usd_ln_safe,True,4314,0.621613832853026
+current_account_balance_usd_ln_safe,True,1511,0.21772334293948126

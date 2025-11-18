@@ -1,0 +1,41 @@
+{
+  "decisions": {
+    "fdi_inflow_usd_ln_safe": {
+      "n_nonnull": 5704,
+      "pct": 0.8219,
+      "action": "country_mean_impute"
+    },
+    "imports_usd_ln_safe": {
+      "n_nonnull": 5573,
+      "pct": 0.803,
+      "action": "country_mean_impute"
+    },
+    "exports_usd_ln_safe": {
+      "n_nonnull": 5522,
+      "pct": 0.7957,
+      "action": "country_mean_impute"
+    },
+    "current_account_balance_usd_ln_safe": {
+      "n_nonnull": 1511,
+      "pct": 0.2177,
+      "action": "drop_candidate"
+    },
+    "total_reserves_usd_ln_safe": {
+      "n_nonnull": 4314,
+      "pct": 0.6216,
+      "action": "global_mean_impute"
+    },
+    "gdp_usd_ln_safe": {
+      "n_nonnull": 6413,
+      "pct": 0.9241,
+      "action": "country_mean_impute"
+    },
+    "gdp_per_capita_usd_ln_safe": {
+      "n_nonnull": 6413,
+      "pct": 0.9241,
+      "action": "country_mean_impute"
+    }
+  },
+  "n_rows": 6940,
+  "generated_at": "2025-11-14T20:43:02.689606Z"
+}

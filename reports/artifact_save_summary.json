@@ -1,0 +1,10 @@
+{
+  "saved": {
+    "ols_result": "artifacts\\ols_result.joblib",
+    "fe_result": "artifacts\\fe_result.joblib",
+    "en_model": "artifacts\\en_model.joblib",
+    "feature_names.json": "artifacts\\feature_names.json",
+    "manifest": "artifacts\\model_artifacts_manifest.json"
+  },
+  "errors": {}
+}

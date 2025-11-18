@@ -1,0 +1,1 @@
+Permutation importance computed with 500 repeats per fold, 5-fold CV. Importance = mean ΔMSE (permuted_mse - baseline_mse) across folds; positive values indicate features that reduce MSE when unpermuted (i.e., make predictions better).

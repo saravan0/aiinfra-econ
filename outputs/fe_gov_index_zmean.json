@@ -1,0 +1,14 @@
+{
+  "coef": 1.658494898999204,
+  "std_err": 0.6780941334370445,
+  "pvalue": 0.014505934665765736,
+  "conf_int": [
+    0.3289516230096059,
+    2.9880381749888025
+  ],
+  "n_obs": 3390,
+  "model_type": "RegressionResultsWrapper",
+  "mapped_exog_name": "x1",
+  "mapped_index": 1,
+  "mapped_to_feature": "gov_index_zmean"
+}

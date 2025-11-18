@@ -2,8 +2,20 @@
 pandas==2.2.3
 numpy==2.1.2
 
+# ==== Statistics / ML ====
+scipy
+statsmodels
+scikit-learn
+linearmodels
+
 # ==== Visualization & QA (optional but useful later) ====
 matplotlib==3.9.2
+plotly
+seaborn
+plotly
+dash
+fpdf2
+tabulate
 
 # ==== Country / geo normalization ====
 pycountry==24.6.1
@@ -19,18 +31,19 @@ jupyterlab==4.2.5
 
 # ==== (optional) Git integration helpers ====
 GitPython==3.1.43
+tqdm
+joblib
+tqdm
+joblib
 
-# ==== (optional) Data validation ====
-openpyxl==3.1.5
+tqdm
+joblib
 
-scipy
+# ==== Dev / CI / linting ====
+pytest
+black
+isort
 
-statsmodels
-
-statsmodels dash plotly
-
-dash
-
-pandas
-
-plotly
+# ==== optional ====
+img2pdf 
+cairosvg

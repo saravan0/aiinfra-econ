@@ -1,0 +1,7 @@
+{
+  "coef": -0.6956130023089342,
+  "shrinkage": true,
+  "model_type": "ElasticNetCV",
+  "feature_index": 0,
+  "feature_name": "gov_index_zmean"
+}

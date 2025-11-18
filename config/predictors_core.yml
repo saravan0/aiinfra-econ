@@ -1,0 +1,14 @@
+# config/predictors_core.yml
+core:
+  - gov_index_zmean
+  - trade_exposure
+  - inflation_consumer_prices_pct
+
+extras:
+  - fdi_inflow_usd_ln_safe
+  - imports_usd_ln_safe
+  - exports_usd_ln_safe
+
+imputation:
+  country_mean_thresh: 0.70
+  global_mean_thresh: 0.50

@@ -1,0 +1,7 @@
+{
+  "n_rows": 3390,
+  "n_features": 3,
+  "repeats": 500,
+  "cv_folds": 5,
+  "generated_at": "2025-11-17T14:35:30.864991+00:00Z"
+}

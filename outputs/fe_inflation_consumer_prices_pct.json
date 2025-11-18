@@ -1,0 +1,14 @@
+{
+  "coef": -0.027972993658411934,
+  "std_err": 0.006736245737870123,
+  "pvalue": 3.372968152969786e-05,
+  "conf_int": [
+    -0.04118079149143996,
+    -0.01476519582538391
+  ],
+  "n_obs": 3390,
+  "model_type": "RegressionResultsWrapper",
+  "mapped_exog_name": "x3",
+  "mapped_index": 3,
+  "mapped_to_feature": "inflation_consumer_prices_pct"
+}

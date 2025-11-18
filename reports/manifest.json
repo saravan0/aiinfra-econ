@@ -1,0 +1,24 @@
+{
+  "generated_at_utc": "2025-11-14T20:00:47Z",
+  "script": "scripts\\generate_onepager.py",
+  "data_input": "data\\processed\\features_lean.csv",
+  "outputs": {
+    "onepager.png": "3c1d9cb738c630fbffe0e140642e6ef906c2d20f161e4a481a7ceddc266a425f",
+    "onepager.pdf": "0a680438eb0f99d50376532789e5ce9cf8a236af883f1f25a78b9a991de9c891",
+    "onepager.md": "d7216f9bfb31181e29d0ab6715a4f2eabf015b4f55b85ceab447fe24568074c9"
+  },
+  "notes": {
+    "regression": {
+      "slope": -1.0158850798005328,
+      "p_value": 1.759455681723864e-14,
+      "n_obs": 2785
+    },
+    "controls_used": [
+      "trade_exposure",
+      "inflation_consumer_prices_pct",
+      "fdi_inflow_usd_ln_safe",
+      "imports_usd_ln_safe",
+      "exports_usd_ln_safe"
+    ]
+  }
+}

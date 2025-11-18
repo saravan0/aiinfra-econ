@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2025-11-15T21:02:16.751880+00:00",
+  "monetary_check": "S:\\aiinfra-econ\\data\\interim\\monetary_scale_check.csv",
+  "top_correlations": "S:\\aiinfra-econ\\data\\interim\\top_correlations.csv",
+  "vif": "S:\\aiinfra-econ\\data\\interim\\vif.csv"
+}
