@@ -1,0 +1,28 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\plot_rolling_validation.py",
+  "generated_at_utc": "2025-11-30T10:16:23.827363Z",
+  "produced_files": [
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_combined.pdf",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_combined.svg",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_combined.png",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_h1.pdf",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_h1.svg",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_h1.png",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rolling_validation_rmse_table_h1.csv",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\preds_by_fold_h1.csv",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\coef_drift_h1.csv",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_combined.pdf",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_combined.svg",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_combined.png",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_h3.pdf",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_h3.svg",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rmse_by_year_h3.png",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\rolling_validation_rmse_table_h3.csv",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\preds_by_fold_h3.csv",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\coef_drift_h3.csv",
+    "S:\\aiinfra-econ\\reports\\plot_rolling_validation\\files\\diebold_mariano_summary.json"
+  ],
+  "features_file": "data\\processed\\features_lean_imputed.csv",
+  "features_sha256": "72ce0c9e9202ece56b94d99823af5e18c8b4a002c04e5b9fc7a07163ea171edd",
+  "git_commit": "573e40770ad8aa719c8eb3499363537e96f34d4f"
+}

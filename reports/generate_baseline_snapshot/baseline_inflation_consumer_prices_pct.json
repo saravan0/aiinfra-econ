@@ -1,0 +1,48 @@
+{
+  "variable": "inflation_consumer_prices_pct",
+  "generated_at_utc": "2025-11-30T10:28:22.760028+00:00",
+  "provenance": {
+    "standardized_json": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\inflation_consumer_prices_pct_standardized.json",
+      "sha256": "b76833fb4ec4443a1b7f0ab7f01e818c3a5840b9dcf7c4136457d90bfd3e26e9",
+      "size": 1253
+    },
+    "lowess_json": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_inflation_consumer_prices_pct.json",
+      "sha256": "160a2ea41728d0f14154581c69193986b9479c097a7fda52d8b5062b3df490c1",
+      "size": 6197
+    },
+    "shap_json": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_inflation_consumer_prices_pct.json",
+      "sha256": "26c46574b916f2e2a5f479e3d561d6307a6e4fe9a9a102a2e863f8132230fb72",
+      "size": 557
+    },
+    "rolling_h1_csv": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+      "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
+      "size": 1218
+    },
+    "rolling_h3_csv": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+      "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
+      "size": 1096
+    }
+  },
+  "metrics": {
+    "sd_var": 16.157686647591852,
+    "sd_target": 5.5232021351783205,
+    "standardized_summary_keys": [
+      "FE",
+      "OLS",
+      "ElasticNet"
+    ],
+    "shap_mean_abs": 0.15870658207314778,
+    "rmse_h1": 5.338586263543759,
+    "rmse_h3": 5.508563955734614,
+    "en_coef": -0.4767127259903248,
+    "fe_source": "DriscollKraay",
+    "fe_coef": -0.030035606227473,
+    "ols_coef": -0.0300356062274733
+  },
+  "notes": []
+}

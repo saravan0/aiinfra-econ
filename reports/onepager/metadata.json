@@ -1,0 +1,36 @@
+{
+  "generated_at_utc": "2025-11-30T10:29:28.792172+00:00",
+  "core_png": "reports\\onepager\\files\\onepager_core.png",
+  "core_svg": "reports\\onepager\\files\\onepager_core.svg",
+  "support_png": "reports\\onepager\\files\\onepager_support.png",
+  "support_svg": "reports\\onepager\\files\\onepager_support.svg",
+  "markdown": "reports\\onepager\\files\\onepager.md",
+  "inputs": {
+    "shap": {
+      "trade_exposure": "reports/plot_shap_elasticnet/trade_exposure/shap_3panel_trade_exposure.png"
+    },
+    "lowess": {
+      "gov_index_zmean": "reports/plot_lowess_nonlinearity/gov_index_zmean/lowess_gam_gov_index_zmean.png"
+    },
+    "rolling_validation": {
+      "rmse_combined_png": "reports/plot_rolling_validation/files/rmse_by_year_combined.png",
+      "h1_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h1.csv",
+      "h3_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h3.csv",
+      "dm_json": "reports/plot_rolling_validation/files/diebold_mariano_summary.json"
+    },
+    "comparative_effects": "reports/plot_comparative_model_effects/files/plot_comparative_model_effects.png",
+    "added_variable_panel": "reports/plot_added_variable_panel/files/plot_added_variable_panel.png",
+    "added_variable_individuals": {
+      "av_trade_exposure": "reports/plot_added_variable_panel/individuals/av_trade_exposure.png",
+      "av_inflation_consumer_prices_pct": "reports/plot_added_variable_panel/individuals/av_inflation_consumer_prices_pct.png"
+    },
+    "en_path": "reports/plot_elasticnet_paths/files/en_path.png",
+    "partials": {
+      "partial_resid_trade": "reports/plot_fe_diagnostics_research/files/partials/partial_resid_trade_exposure.png",
+      "partial_resid_gov": "reports/plot_fe_diagnostics_research/files/partials/partial_resid_gov_index_zmean.png",
+      "partial_resid_infl": "reports/plot_fe_diagnostics_research/files/partials/partial_resid_inflation_consumer_prices_pct.png"
+    },
+    "qq_studentized": "reports/plot_fe_diagnostics_research/files/qq_studentized.png",
+    "baseline_json": "reports/generate_baseline_snapshot/generate_baseline_snapshot.json"
+  }
+}

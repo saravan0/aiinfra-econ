@@ -7,6 +7,8 @@ scipy
 statsmodels
 scikit-learn
 linearmodels
+pygam
+shap
 
 # ==== Visualization & QA (optional but useful later) ====
 matplotlib==3.9.2
@@ -46,6 +48,7 @@ isort
 
 # ==== optional ====
 img2pdf 
+pdf2image
 cairosvg
 markdown 
 weasyprint 

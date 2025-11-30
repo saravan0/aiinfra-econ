@@ -1,0 +1,21 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\plot_comparative_model_effects.py",
+  "generated_at_utc": "2025-11-22T19:33:42.008492+00:00Z",
+  "args": {
+    "vars": [
+      "trade_exposure",
+      "gov_index_zmean",
+      "inflation_consumer_prices_pct"
+    ],
+    "outprefix": "plot_comparative_model_effects",
+    "features": "data/processed/features_lean_imputed.csv",
+    "dpi": 600
+  },
+  "produced_files": [
+    "reports\\plot_comparative_model_effects\\files\\plot_comparative_model_effects.png",
+    "reports\\plot_comparative_model_effects\\files\\plot_comparative_model_effects.pdf",
+    "reports\\plot_comparative_model_effects\\files\\plot_comparative_model_effects.svg"
+  ],
+  "features_file": "data/processed/features_lean_imputed.csv",
+  "features_sha256": "72ce0c9e9202ece56b94d99823af5e18c8b4a002c04e5b9fc7a07163ea171edd"
+}

@@ -1,64 +1,126 @@
-# AI Infra–Economics OnePager: Governance, Trade, and Growth
-
-**One-page summary: governance, trade, and growth — AI Infrastructure meets macroeconomics**
-
-**Context & Objective.**  
-This study investigates the empirical relationship between governance quality, trade openness, inflation, and short-run GDP growth using a reproducible AI–econometrics pipeline. The objective is to combine robust panel fixed-effect estimation with model-regularization diagnostics to produce interpretable, policy-relevant findings suitable for scholarly review.
-
-**Data & pre-processing (brief).**  
-Feature engineering, imputation, and transformation are implemented in `src/data` (not reproduced here). The analysis uses a harmonized sample of country-year observations; all continuous predictors were standardized for interpretability in the FE framework. Missing data were imputed deterministically as described in the pipeline; categorical harmonization and scaling ensure stable model estimation.
-
-**Primary finding (headline).**  
-Trade openness is positively associated with contemporaneous GDP growth: across regularized models and FE specifications, higher trade exposure corresponds to higher short-run growth after controlling for entity fixed effects and other macro factors. This result is robust across ElasticNet model paths and comparative model effect analyses.
-
-**Governance — nuanced interpretation.**  
-Governance (gov_index_zmean) displays a counter-intuitive short-run sign: higher measured governance associates with *lower* contemporaneous growth. We interpret this as a plausible dynamic phenomenon rather than model failure — stronger governance regimes may prioritize structural reforms, fiscal consolidation, or regulatory stabilization that transiently slow GDP growth but yield greater long-run stability and resilience. Thus: **short-term negative; long-term stabilizing** — a pattern consistent with high-quality institutions doing corrective policy.
-
-**Inflation and macro controls.**  
-Inflation exhibits the expected negative contemporaneous association with growth at the sample-frequency used here; however, the magnitude is modest relative to trade openness and is sensitive to model specification — consistent with inflation exerting both cyclical and policy-driven effects.
-
-**Robustness & diagnostics.**  
-Robustness checks include:
-- ElasticNet coefficient path analysis (regularization stability),
-- Partial/added-variable plots (conditional relationship visualization),
-- Fixed-effect diagnostics (studentized residuals, leverage/Cook's D),
-- Comparative model effects across candidate estimators.
-
-Collectively the diagnostics confirm that the observed associations are not artifacts of a single model: coefficients are stable across penalty paths, residual diagnostics show no dominant influential outliers driving the main trade openness effect, and permutation/added-variable analyses support conditional interpretation.
+# **Reproducible AI Infrastructure for High-Dimensional Modeling**
+### *A Hybrid Machine Learning–Econometrics System for Macroeconomic Forecasting and Diagnostics*
 
 ---
 
-## Key results (detailed interpretation)
+## **1. Purpose & Framing**
 
-- **Trade openness (trade_exposure):** Positive and robust. ElasticNet and FE diagnostics indicate a persistent positive partial effect on contemporaneous growth; effect sizes consistent with a moderate policy-relevant elasticity.
-- **Governance (gov_index_zmean):** Negative short-term coefficient; we argue this reflects structural policy adjustment by higher-governance regimes (temporary growth cost, longer-term stability). Models show high significance but require careful temporal interpretation.
-- **Inflation (inflation_consumer_prices_pct):** Negative contemporaneous relationship, smaller magnitude; sensitive to specification and control sets.
-- **Other controls (exports, imports, reserves, FDI):** These controls improve model fit and adjust coefficient magnitudes; detailed effect sizes are reported in the appendix figures.
+This one-pager summarizes a fully reproducible AI–econometrics system designed for high-dimensional macroeconomic modeling.
+The pipeline integrates elastic-net regularization, fixed-effects econometrics, SHAP attribution, nonlinearity diagnostics, and temporal forecasting into a unified research-grade workflow.
 
----
-
-## Figures included (consolidated plate)
-A single consolidated SVG (`onepager_plate_*.svg`) embeds the following panels:
-- Comparative model effects (regularized vs benchmark)
-- Partial/added-variable panel (conditional relationships)
-- ElasticNet coefficient paths (regularization stability)
-- FE diagnostics: partial residuals, leverage / Cook's D, QQ of studentized residuals
-
-*I chose a consolidated SVG to facilitate rapid visual review while reducing file proliferation. Individual SVGs remain referenced for traceability.*
+The objective is robust causal-adjacent interpretation of how governance, trade exposure, and inflation shape short-run GDP growth—validated across multiple estimators and through out-of-sample forecasting.
 
 ---
 
-## How to read this one-pager
-- Read the **headline** and **key results** first to understand policy takeaways.
-- Consult the **consolidated plate** to inspect effect shapes and diagnostics in a single view.
-- Use the appendix figures (individual svgs in the repo) for deeper replication and figure export.
+## **2. Data & Preprocessing **
+
+- Harmonized global panel (2000–2023).
+- Standardization of predictors to enable FE interpretation (coef × SD_x / SD_y).
+- Deterministic imputation + consistency enforcement (structural zeros, monotonicity checks).
+- ElasticNet artifacts (model + scaler) fully version-controlled.
+- All intermediate outputs captured by the baseline snapshot engine.
+
+This ensures bit-for-bit reproducibility of all results.
 
 ---
 
-## Appendix (technical notes)
-- Processing & imputation live in `src/data`.
-- Standard errors reported in FE fits use the within-demean estimator; coefficient interpretation reported as standardized effects (coef * sd_x / sd_y).
-- Manifest and metadata files are saved alongside the plate in `reports/onepager/` and `reports/onepager/files/`.
+## **3. Core Empirical Findings**
 
+### **Trade exposure → growth **
+Across FE (Driscoll–Kraay corrected), OLS, and ElasticNet, trade remains a positive and consistent driver of short-run GDP growth.
+SHAP values confirm its high global importance, and LOWESS curves show an increasing and smooth nonlinearity without sign reversals.
 
-*
+### **Governance → temporary negative effect **
+Higher governance quality correlates with lower contemporaneous growth, a result stable across all estimators and SHAP.
+This is interpreted as a short-run reform cost: high-governance regimes often implement regulatory tightening, fiscal adjustments, or structural reforms that depress short-term growth but improve long-run resilience.
+
+### **Inflation → moderate negative effect**
+Inflation’s sign aligns with macroeconomic intuition; magnitude is smaller and more specification-sensitive but directionally stable across FE, OLS, ElasticNet, and SHAP.
+
+---
+
+## **4. Nonlinearity Diagnostics **
+
+The LOWESS/GAM-style nonlinear plates reveal:
+
+- **Trade exposure:** steadily increasing marginal returns; no evidence of thresholds.
+- **Governance:** notable curvature — negative at low/mid governance, flattening at high governance (turning-point detected via derivative).
+- **Inflation:** mild convexity but stable sign.
+
+These shape analyses confirm that effects are smooth, monotonic, and interpretable, not driven by local instabilities.
+
+---
+
+## **5. SHAP Attribution **
+
+Mean absolute SHAP contributions rank:
+
+1. Governance quality
+2. Trade exposure
+3. Inflation
+
+This ordering matches the FE and OLS standardized magnitudes, providing cross-method validation.
+SHAP also confirms the direction of effects and the absence of strong interactions.
+
+---
+
+## **6. Temporal Forecasting & Stability **
+
+A full expanding-window validation (2000→2023) quantifies temporal stability, not just in-sample fit.
+
+### **Key insights:**
+- RMSE stable (~3–4.5) in normal years;
+- Expected spikes occur in 2009 (GFC) and 2020 (COVID-19 shock);
+- Diebold–Mariano tests confirm statistically significant improvement over a persistence benchmark except during global crises;
+- No evidence of model drift or structural breaks outside shock years.
+
+This demonstrates a high-stability forecasting backbone.
+
+---
+
+## **7. Consolidated Baseline Snapshot **
+
+The final baseline snapshot bundles:
+
+- FE coefficients (Driscoll–Kraay)
+- OLS coefficients
+- ElasticNet coefficients at selected α
+- SHAP mean |importance|
+- Nonlinearity metrics
+- Rolling RMSE (h1, h3)
+- Provenance hashes and paths
+
+All variables show sign consistency across methods, a strong indicator of robustness.
+
+---
+
+## **8. Visual Summary **
+
+The generated **onepager_core.png / onepager_support.png** contain:
+
+- Core plate: three 1×3 images stacked → 3×3 presentation (LOWESS gov, SHAP trade, Rolling RMSE).
+- Support plate: 2×3 grid containing added-variable individuals, comparative effects, EN path, partials, QQ.
+
+All rendered with consistent layout and 300 DPI export.
+
+---
+
+## **9. Interpretation & Policy Relevance**
+
+- **Trade openness** remains a highly robust and policy-relevant predictor of short-run growth.
+- **Governance** shows a reform-cycle effect: short-run negative, long-run stabilizing.
+- **Inflation** acts as a standard cyclical drag with moderate effect size.
+
+Forecasting results demonstrate that the system is stable and shock-aware, not overfit.
+
+---
+
+## **10. Reproducibility & Metadata**
+
+Re-run the entire analysis via:
+
+reports/generate_baseline_snapshot/ (JSON + CSV + provenance)
+
+reports/onepager/files/ (PNG + SVG + MD + metadata + manifest)
+
+The system implements full reproducibility, metadata tracking, and artifact integrity checks.

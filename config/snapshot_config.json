@@ -1,0 +1,48 @@
+{
+  "features_csv": "data/processed/features_lean_imputed.csv",
+  "provenance": {
+    "en_model": "artifacts/en_model.joblib",
+    "scaler": "artifacts/scaler.joblib",
+    "rolling_h1_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h1.csv",
+    "rolling_h3_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h3.csv"
+  },
+  "variables": {
+    "trade_exposure": {
+      "fe_json": "reports/plot_fe_diagnostics_research/files/fe_trade_exposure.json",
+      "ols_json": "reports/plot_fe_diagnostics_research/files/ols_trade_exposure.json",
+      "elasticnet_json": "reports/plot_fe_diagnostics_research/files/elasticnet_trade_exposure.json",
+      "standardized_json": "reports/plot_fe_diagnostics_research/files/standardized/trade_exposure_standardized.json",
+      "lowess_json": "reports/plot_lowess_nonlinearity/trade_exposure/lowess_gam_trade_exposure.json",
+      "shap_json": "reports/plot_shap_elasticnet/trade_exposure/shap_3panel_trade_exposure.json",
+      "rolling_h1_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h1.csv",
+      "rolling_h3_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h3.csv"
+    },
+    "gov_index_zmean": {
+      "fe_json": "reports/plot_fe_diagnostics_research/files/fe_gov_index_zmean.json",
+      "ols_json": "reports/plot_fe_diagnostics_research/files/ols_gov_index_zmean.json",
+      "elasticnet_json": "reports/plot_fe_diagnostics_research/files/elasticnet_gov_index_zmean.json",
+      "standardized_json": "reports/plot_fe_diagnostics_research/files/standardized/gov_index_zmean_standardized.json",
+      "lowess_json": "reports/plot_lowess_nonlinearity/gov_index_zmean/lowess_gam_gov_index_zmean.json",
+      "shap_json": "reports/plot_shap_elasticnet/gov_index_zmean/shap_3panel_gov_index_zmean.json",
+      "rolling_h1_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h1.csv",
+      "rolling_h3_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h3.csv"
+    },
+    "inflation_consumer_prices_pct": {
+      "fe_json": "reports/plot_fe_diagnostics_research/files/fe_inflation_consumer_prices_pct.json",
+      "ols_json": "reports/plot_fe_diagnostics_research/files/ols_inflation_consumer_prices_pct.json",
+      "elasticnet_json": "reports/plot_fe_diagnostics_research/files/elasticnet_inflation_consumer_prices_pct.json",
+      "standardized_json": "reports/plot_fe_diagnostics_research/files/standardized/inflation_consumer_prices_pct_standardized.json",
+      "lowess_json": "reports/plot_lowess_nonlinearity/inflation_consumer_prices_pct/lowess_gam_inflation_consumer_prices_pct.json",
+      "shap_json": "reports/plot_shap_elasticnet/inflation_consumer_prices_pct/shap_3panel_inflation_consumer_prices_pct.json",
+      "rolling_h1_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h1.csv",
+      "rolling_h3_csv": "reports/plot_rolling_validation/files/rolling_validation_rmse_table_h3.csv"
+    }
+  },
+  "extra_files": {
+    "model_table_csv": "reports/model_table.csv",
+    "model_metadata_json": "reports/model_metadata.json",
+    "correlation_matrix_csv": "reports/correlation_matrix.csv",
+    "comparative_meta_json": "reports/plot_comparative_model_effects/plot_comparative_model_effects_meta.json",
+    "robustness_json": "reports/plot_fe_diagnostics_research/files/robustness/robustness_summary.json"
+  }
+}

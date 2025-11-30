@@ -1,392 +1,149 @@
-[
-  {
-    "variable": "trade_exposure",
-    "collected_at_utc": "2025-11-22T19:29:30.009468Z",
-    "notes": [],
-    "standardized_summary": {
-      "var": "trade_exposure",
-      "sd_target": 5.5232021351783205,
-      "sd_var": 59.57420305984167,
-      "summary": {
-        "FE": {
-          "model_type": null,
-          "coef": 0.034906160410541065,
-          "std_err": 0.004439446451147109,
-          "pvalue": 5.0110952605503344e-15,
-          "n_obs": 3390,
-          "mapped_exog_name": null,
-          "mapped_index": null,
-          "standardized": 0.3765038174308718,
-          "magnitude": "large"
-        },
-        "OLS": {
-          "model_type": null,
-          "coef": 0.006798018380361876,
-          "std_err": 0.0022210608810914346,
-          "pvalue": 0.0022081446869647798,
-          "n_obs": null,
-          "mapped_exog_name": "trade_exposure",
-          "mapped_index": null,
-          "standardized": 0.07332458915757917,
-          "magnitude": "moderate"
-        },
-        "ElasticNet": {
-          "model_type": null,
-          "coef": 0.0067815800042265615,
-          "std_err": null,
-          "pvalue": null,
-          "n_obs": null,
-          "mapped_exog_name": "trade_exposure",
-          "mapped_index": 1,
-          "standardized": 0.07314728202054323,
-          "magnitude": "moderate"
-        }
-      },
-      "ml_diag": {
-        "elasticnet_vs_ols_ratio": 0.9975818870712675,
-        "elasticnet_shrinkage_abs": true
-      }
-    },
-    "fe_json": {
-      "artifact_path": "artifacts\\fe_result.joblib"
-    },
-    "ols_json": {
-      "artifact_path": "artifacts\\ols_result.joblib"
-    },
-    "elasticnet_json": {
+{
+  "entries": [
+    {
       "variable": "trade_exposure",
-      "sd_var": 60.05248235142395,
-      "sd_target": 5.651707673694559,
-      "extracted_at_utc": "2025-11-22T07:32:59.574347+00:00Z",
-      "fe_within": {
-        "n_obs": 3390,
-        "coef": 0.034906160410541065,
-        "std_err": 0.004439446451147109,
-        "pvalue": 5.0110952605503344e-15,
-        "sd_target": 5.651707673694559,
-        "sd_var": 60.05248235142395,
-        "standardized_effect": 0.37089702847983463
+      "generated_at_utc": "2025-11-30T10:28:22.660268+00:00",
+      "provenance": {
+        "standardized_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\trade_exposure_standardized.json",
+          "sha256": "c18e182c3a481d373861d8fffe6e570057442a81f86661d35764aeed85ffb325",
+          "size": 1200
+        },
+        "lowess_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_trade_exposure.json",
+          "sha256": "17df4926b5495455e69a4ee4d17fcfd2e9baa5b4ccc85d856ee7d7c90d5582fe",
+          "size": 5557
+        },
+        "shap_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_trade_exposure.json",
+          "sha256": "fca49ee29aaaacc33a34871ccb1b20ca72f59b72a3424001a19db06645dceaa3",
+          "size": 496
+        },
+        "rolling_h1_csv": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+          "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
+          "size": 1218
+        },
+        "rolling_h3_csv": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+          "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
+          "size": 1096
+        }
       },
-      "fe_artifact": {
-        "present": true,
-        "notes": [],
-        "mapped_name": "x2",
-        "mapped_index": 2,
-        "coef_raw": 0.0350694078908761,
-        "mapping_method": "fe_param_map_positional"
-      },
-      "ols": {
-        "present": true,
-        "mapped_name": "trade_exposure",
-        "coef_raw": 0.006798018380361876,
-        "se": 0.0022210608810914346,
-        "pvalue": 0.0022081446869647798
-      },
-      "elasticnet": {
-        "present": true,
-        "mapped_name": "trade_exposure",
-        "mapped_index": 1,
-        "coef_scaled": 0.4072507135185851,
-        "coef_raw": 0.0067815800042265615
+      "metrics": {
+        "sd_var": 59.57420305984167,
+        "sd_target": 5.5232021351783205,
+        "standardized_summary_keys": [
+          "FE",
+          "OLS",
+          "ElasticNet"
+        ],
+        "shap_mean_abs": 0.27933752669881334,
+        "rmse_h1": 5.338586263543759,
+        "rmse_h3": 5.508563955734614,
+        "en_coef": 0.4072485555669973,
+        "fe_source": "DriscollKraay",
+        "fe_coef": 0.0067980183803618,
+        "ols_coef": 0.0067980183803618
       },
       "notes": []
     },
-    "sd_target": 5.5232021351783205,
-    "sd_var": 59.57420305984167,
-    "summary": {
-      "FE": {
-        "model_type": null,
-        "coef": 0.034906160410541065,
-        "std_err": 0.004439446451147109,
-        "pvalue": 5.0110952605503344e-15,
-        "n_obs": 3390,
-        "mapped_exog_name": null,
-        "mapped_index": null,
-        "standardized": 0.3765038174308718,
-        "magnitude": "large"
-      },
-      "OLS": {
-        "model_type": null,
-        "coef": 0.006798018380361876,
-        "std_err": 0.0022210608810914346,
-        "pvalue": 0.0022081446869647798,
-        "n_obs": null,
-        "mapped_exog_name": "trade_exposure",
-        "mapped_index": null,
-        "standardized": 0.07332458915757917,
-        "magnitude": "moderate"
-      },
-      "ElasticNet": {
-        "model_type": null,
-        "coef": 0.0067815800042265615,
-        "std_err": null,
-        "pvalue": null,
-        "n_obs": null,
-        "mapped_exog_name": "trade_exposure",
-        "mapped_index": 1,
-        "standardized": 0.07314728202054323,
-        "magnitude": "moderate"
-      }
-    }
-  },
-  {
-    "variable": "gov_index_zmean",
-    "collected_at_utc": "2025-11-22T19:29:30.033096Z",
-    "notes": [],
-    "standardized_summary": {
-      "var": "gov_index_zmean",
-      "sd_target": 5.5232021351783205,
-      "sd_var": 0.9210834404139059,
-      "summary": {
-        "FE": {
-          "model_type": null,
-          "coef": 1.4047001152776415,
-          "std_err": 0.6666919903342573,
-          "pvalue": 0.03519349282561445,
-          "n_obs": 3390,
-          "mapped_exog_name": null,
-          "mapped_index": null,
-          "standardized": 0.2342565025257703,
-          "magnitude": "large"
-        },
-        "OLS": {
-          "model_type": null,
-          "coef": -0.7813015212558196,
-          "std_err": 0.1558279831793296,
-          "pvalue": 5.334555312070583e-07,
-          "n_obs": null,
-          "mapped_exog_name": "gov_index_zmean",
-          "mapped_index": null,
-          "standardized": -0.13029468695620977,
-          "magnitude": "moderate"
-        },
-        "ElasticNet": {
-          "model_type": null,
-          "coef": -0.7798529587051164,
-          "std_err": null,
-          "pvalue": null,
-          "n_obs": null,
-          "mapped_exog_name": "gov_index_zmean",
-          "mapped_index": null,
-          "standardized": -0.13005311568193786,
-          "magnitude": "moderate"
-        }
-      },
-      "ml_diag": {
-        "elasticnet_vs_ols_ratio": 0.998145962203715,
-        "elasticnet_shrinkage_abs": true
-      }
-    },
-    "fe_json": {
-      "artifact_path": "artifacts\\fe_result.joblib"
-    },
-    "ols_json": {
-      "artifact_path": "artifacts\\ols_result.joblib"
-    },
-    "elasticnet_json": {
+    {
       "variable": "gov_index_zmean",
-      "sd_var": 0.8921154542729298,
-      "sd_target": 5.651707673694559,
-      "extracted_at_utc": "2025-11-22T07:32:59.601620+00:00Z",
-      "fe_within": {
-        "n_obs": 3390,
-        "coef": 1.4047001152776415,
-        "std_err": 0.6666919903342573,
-        "pvalue": 0.03519349282561445,
-        "sd_target": 5.651707673694559,
-        "sd_var": 0.8921154542729298,
-        "standardized_effect": 0.22173027230174389
-      },
-      "fe_artifact": {
-        "present": true,
-        "notes": [],
-        "mapped_name": "x1",
-        "mapped_index": 1,
-        "coef_raw": 1.658552121443586,
-        "mapping_method": "fe_param_map_positional"
-      },
-      "ols": {
-        "present": true,
-        "mapped_name": "gov_index_zmean",
-        "coef_raw": -0.7813015212558196,
-        "se": 0.1558279831793296,
-        "pvalue": 5.334555312070583e-07
-      },
-      "elasticnet": {
-        "present": true,
-        "mapped_name": "gov_index_zmean",
-        "mapped_index": 0,
-        "coef_scaled": -0.6957188765213033,
-        "coef_raw": -0.7798529587051164
-      },
-      "notes": []
-    },
-    "sd_target": 5.5232021351783205,
-    "sd_var": 0.9210834404139059,
-    "summary": {
-      "FE": {
-        "model_type": null,
-        "coef": 1.4047001152776415,
-        "std_err": 0.6666919903342573,
-        "pvalue": 0.03519349282561445,
-        "n_obs": 3390,
-        "mapped_exog_name": null,
-        "mapped_index": null,
-        "standardized": 0.2342565025257703,
-        "magnitude": "large"
-      },
-      "OLS": {
-        "model_type": null,
-        "coef": -0.7813015212558196,
-        "std_err": 0.1558279831793296,
-        "pvalue": 5.334555312070583e-07,
-        "n_obs": null,
-        "mapped_exog_name": "gov_index_zmean",
-        "mapped_index": null,
-        "standardized": -0.13029468695620977,
-        "magnitude": "moderate"
-      },
-      "ElasticNet": {
-        "model_type": null,
-        "coef": -0.7798529587051164,
-        "std_err": null,
-        "pvalue": null,
-        "n_obs": null,
-        "mapped_exog_name": "gov_index_zmean",
-        "mapped_index": null,
-        "standardized": -0.13005311568193786,
-        "magnitude": "moderate"
-      }
-    }
-  },
-  {
-    "variable": "inflation_consumer_prices_pct",
-    "collected_at_utc": "2025-11-22T19:29:30.054904Z",
-    "notes": [],
-    "standardized_summary": {
-      "var": "inflation_consumer_prices_pct",
-      "sd_target": 5.5232021351783205,
-      "sd_var": 16.157686647591852,
-      "summary": {
-        "FE": {
-          "model_type": null,
-          "coef": -0.028691752015965143,
-          "std_err": 0.006594682848898306,
-          "pvalue": 1.3968154549455321e-05,
-          "n_obs": 3390,
-          "mapped_exog_name": null,
-          "mapped_index": null,
-          "standardized": -0.0839354285970577,
-          "magnitude": "moderate"
+      "generated_at_utc": "2025-11-30T10:28:22.707498+00:00",
+      "provenance": {
+        "standardized_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\gov_index_zmean_standardized.json",
+          "sha256": "1e1bb6b3a61d62f828d6ef95313784ae60c4e1af920776c0d942b24c08e92db1",
+          "size": 1195
         },
-        "OLS": {
-          "model_type": null,
-          "coef": -0.03003560622747332,
-          "std_err": 0.0068673960291871896,
-          "pvalue": 1.2218462369360446e-05,
-          "n_obs": null,
-          "mapped_exog_name": "inflation_consumer_prices_pct",
-          "mapped_index": null,
-          "standardized": -0.08786676674441572,
-          "magnitude": "moderate"
+        "lowess_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_gov_index_zmean.json",
+          "sha256": "bc2a455bca57755b01f6edde25f4e0a45855b0b3624b4220149ea7afc724925e",
+          "size": 6053
         },
-        "ElasticNet": {
-          "model_type": null,
-          "coef": -0.02998016760469614,
-          "std_err": null,
-          "pvalue": null,
-          "n_obs": null,
-          "mapped_exog_name": "inflation_consumer_prices_pct",
-          "mapped_index": 2,
-          "standardized": -0.08770458548197332,
-          "magnitude": "moderate"
+        "shap_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_gov_index_zmean.json",
+          "sha256": "f778bdcf65e193fd6c7208c66ff2635d286c0800ca74c1a8695b700078346597",
+          "size": 472
+        },
+        "rolling_h1_csv": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+          "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
+          "size": 1218
+        },
+        "rolling_h3_csv": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+          "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
+          "size": 1096
         }
       },
-      "ml_diag": {
-        "elasticnet_vs_ols_ratio": 0.9981542365964808,
-        "elasticnet_shrinkage_abs": true
-      }
-    },
-    "fe_json": {
-      "artifact_path": "artifacts\\fe_result.joblib"
-    },
-    "ols_json": {
-      "artifact_path": "artifacts\\ols_result.joblib"
-    },
-    "elasticnet_json": {
-      "variable": "inflation_consumer_prices_pct",
-      "sd_var": 15.900903600817083,
-      "sd_target": 5.651707673694559,
-      "extracted_at_utc": "2025-11-22T07:32:59.621988+00:00Z",
-      "fe_within": {
-        "n_obs": 3390,
-        "coef": -0.028691752015965143,
-        "std_err": 0.006594682848898306,
-        "pvalue": 1.3968154549455321e-05,
-        "sd_target": 5.651707673694559,
-        "sd_var": 15.900903600817083,
-        "standardized_effect": -0.08072335111525217
-      },
-      "fe_artifact": {
-        "present": true,
-        "notes": [],
-        "mapped_name": "x3",
-        "mapped_index": 3,
-        "coef_raw": -0.027988828990927368,
-        "mapping_method": "fe_param_map_positional"
-      },
-      "ols": {
-        "present": true,
-        "mapped_name": "inflation_consumer_prices_pct",
-        "coef_raw": -0.03003560622747332,
-        "se": 0.0068673960291871896,
-        "pvalue": 1.2218462369360446e-05
-      },
-      "elasticnet": {
-        "present": true,
-        "mapped_name": "inflation_consumer_prices_pct",
-        "mapped_index": 2,
-        "coef_scaled": -0.4767117550186125,
-        "coef_raw": -0.02998016760469614
+      "metrics": {
+        "sd_var": 0.9210834404139059,
+        "sd_target": 5.5232021351783205,
+        "standardized_summary_keys": [
+          "FE",
+          "OLS",
+          "ElasticNet"
+        ],
+        "shap_mean_abs": 0.5893432198233653,
+        "rmse_h1": 5.338586263543759,
+        "rmse_h3": 5.508563955734614,
+        "en_coef": -0.6957191789353128,
+        "fe_source": "DriscollKraay",
+        "fe_coef": -0.7813015212558175,
+        "ols_coef": -0.7813015212558196
       },
       "notes": []
     },
-    "sd_target": 5.5232021351783205,
-    "sd_var": 16.157686647591852,
-    "summary": {
-      "FE": {
-        "model_type": null,
-        "coef": -0.028691752015965143,
-        "std_err": 0.006594682848898306,
-        "pvalue": 1.3968154549455321e-05,
-        "n_obs": 3390,
-        "mapped_exog_name": null,
-        "mapped_index": null,
-        "standardized": -0.0839354285970577,
-        "magnitude": "moderate"
+    {
+      "variable": "inflation_consumer_prices_pct",
+      "generated_at_utc": "2025-11-30T10:28:22.760028+00:00",
+      "provenance": {
+        "standardized_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\inflation_consumer_prices_pct_standardized.json",
+          "sha256": "b76833fb4ec4443a1b7f0ab7f01e818c3a5840b9dcf7c4136457d90bfd3e26e9",
+          "size": 1253
+        },
+        "lowess_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_inflation_consumer_prices_pct.json",
+          "sha256": "160a2ea41728d0f14154581c69193986b9479c097a7fda52d8b5062b3df490c1",
+          "size": 6197
+        },
+        "shap_json": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_inflation_consumer_prices_pct.json",
+          "sha256": "26c46574b916f2e2a5f479e3d561d6307a6e4fe9a9a102a2e863f8132230fb72",
+          "size": 557
+        },
+        "rolling_h1_csv": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+          "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
+          "size": 1218
+        },
+        "rolling_h3_csv": {
+          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+          "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
+          "size": 1096
+        }
       },
-      "OLS": {
-        "model_type": null,
-        "coef": -0.03003560622747332,
-        "std_err": 0.0068673960291871896,
-        "pvalue": 1.2218462369360446e-05,
-        "n_obs": null,
-        "mapped_exog_name": "inflation_consumer_prices_pct",
-        "mapped_index": null,
-        "standardized": -0.08786676674441572,
-        "magnitude": "moderate"
+      "metrics": {
+        "sd_var": 16.157686647591852,
+        "sd_target": 5.5232021351783205,
+        "standardized_summary_keys": [
+          "FE",
+          "OLS",
+          "ElasticNet"
+        ],
+        "shap_mean_abs": 0.15870658207314778,
+        "rmse_h1": 5.338586263543759,
+        "rmse_h3": 5.508563955734614,
+        "en_coef": -0.4767127259903248,
+        "fe_source": "DriscollKraay",
+        "fe_coef": -0.030035606227473,
+        "ols_coef": -0.0300356062274733
       },
-      "ElasticNet": {
-        "model_type": null,
-        "coef": -0.02998016760469614,
-        "std_err": null,
-        "pvalue": null,
-        "n_obs": null,
-        "mapped_exog_name": "inflation_consumer_prices_pct",
-        "mapped_index": 2,
-        "standardized": -0.08770458548197332,
-        "magnitude": "moderate"
-      }
+      "notes": []
     }
-  }
-]
+  ],
+  "generated_at_utc": "2025-11-30T10:28:22.809480+00:00"
+}

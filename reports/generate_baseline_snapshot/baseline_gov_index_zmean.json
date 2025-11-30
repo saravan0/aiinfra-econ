@@ -1,0 +1,48 @@
+{
+  "variable": "gov_index_zmean",
+  "generated_at_utc": "2025-11-30T10:28:22.707498+00:00",
+  "provenance": {
+    "standardized_json": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\gov_index_zmean_standardized.json",
+      "sha256": "1e1bb6b3a61d62f828d6ef95313784ae60c4e1af920776c0d942b24c08e92db1",
+      "size": 1195
+    },
+    "lowess_json": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_gov_index_zmean.json",
+      "sha256": "bc2a455bca57755b01f6edde25f4e0a45855b0b3624b4220149ea7afc724925e",
+      "size": 6053
+    },
+    "shap_json": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_gov_index_zmean.json",
+      "sha256": "f778bdcf65e193fd6c7208c66ff2635d286c0800ca74c1a8695b700078346597",
+      "size": 472
+    },
+    "rolling_h1_csv": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+      "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
+      "size": 1218
+    },
+    "rolling_h3_csv": {
+      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+      "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
+      "size": 1096
+    }
+  },
+  "metrics": {
+    "sd_var": 0.9210834404139059,
+    "sd_target": 5.5232021351783205,
+    "standardized_summary_keys": [
+      "FE",
+      "OLS",
+      "ElasticNet"
+    ],
+    "shap_mean_abs": 0.5893432198233653,
+    "rmse_h1": 5.338586263543759,
+    "rmse_h3": 5.508563955734614,
+    "en_coef": -0.6957191789353128,
+    "fe_source": "DriscollKraay",
+    "fe_coef": -0.7813015212558175,
+    "ols_coef": -0.7813015212558196
+  },
+  "notes": []
+}

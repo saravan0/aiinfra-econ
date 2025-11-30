@@ -1,0 +1,15 @@
+{
+  "feature": "gov_index_zmean",
+  "n_points": 3390,
+  "coef": -0.6957188765213033,
+  "mean_abs_shap": 0.5893432198233653,
+  "hist_display_cap_pct": null,
+  "hist_display_cap_val": null,
+  "single_panel_plots": {
+    "dependence": "dependence_gov_index_zmean.svg",
+    "distribution": "distribution_gov_index_zmean.svg",
+    "marginal": "marginal_gov_index_zmean.svg",
+    "distribution_display_cap_pct": null,
+    "distribution_display_cap_val": null
+  }
+}
