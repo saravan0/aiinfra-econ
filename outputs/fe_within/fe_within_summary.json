@@ -1,0 +1,41 @@
+{
+  "trade_exposure": {
+    "status": "ok",
+    "result": {
+      "var": "trade_exposure",
+      "n_obs": 3390,
+      "coef": 0.034906160410541065,
+      "pvalue": 5.0110952605503344e-15,
+      "std_err": 0.004439446451147109,
+      "standardized_effect": 0.37089702847983463,
+      "timestamp": "2025-11-21T22:29:52.579065+00:00",
+      "model_type": "WithinDemean_Aligned"
+    }
+  },
+  "gov_index_zmean": {
+    "status": "ok",
+    "result": {
+      "var": "gov_index_zmean",
+      "n_obs": 3390,
+      "coef": 1.4047001152776415,
+      "pvalue": 0.03519349282561445,
+      "std_err": 0.6666919903342573,
+      "standardized_effect": 0.22173027230174389,
+      "timestamp": "2025-11-21T22:29:52.584781+00:00",
+      "model_type": "WithinDemean_Aligned"
+    }
+  },
+  "inflation_consumer_prices_pct": {
+    "status": "ok",
+    "result": {
+      "var": "inflation_consumer_prices_pct",
+      "n_obs": 3390,
+      "coef": -0.028691752015965143,
+      "pvalue": 1.3968154549455321e-05,
+      "std_err": 0.006594682848898306,
+      "standardized_effect": -0.08072335111525217,
+      "timestamp": "2025-11-21T22:29:52.590249+00:00",
+      "model_type": "WithinDemean_Aligned"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "var": "gov_index_zmean",
+  "sd_target": 5.5232021351783205,
+  "sd_var": 0.9210834404139059,
+  "summary": {
+    "FE": {
+      "model_type": null,
+      "coef": 1.4047001152776415,
+      "std_err": 0.6666919903342573,
+      "pvalue": 0.03519349282561445,
+      "n_obs": 3390,
+      "mapped_exog_name": null,
+      "mapped_index": null,
+      "standardized": 0.2342565025257703,
+      "magnitude": "large"
+    },
+    "OLS": {
+      "model_type": null,
+      "coef": -0.7813015212558196,
+      "std_err": 0.1558279831793296,
+      "pvalue": 5.334555312070583e-07,
+      "n_obs": null,
+      "mapped_exog_name": "gov_index_zmean",
+      "mapped_index": null,
+      "standardized": -0.13029468695620977,
+      "magnitude": "moderate"
+    },
+    "ElasticNet": {
+      "model_type": null,
+      "coef": -0.7798529587051164,
+      "std_err": null,
+      "pvalue": null,
+      "n_obs": null,
+      "mapped_exog_name": "gov_index_zmean",
+      "mapped_index": null,
+      "standardized": -0.13005311568193786,
+      "magnitude": "moderate"
+    }
+  },
+  "ml_diag": {
+    "elasticnet_vs_ols_ratio": 0.998145962203715,
+    "elasticnet_shrinkage_abs": true
+  }
+}

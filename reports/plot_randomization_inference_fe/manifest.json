@@ -1,0 +1,48 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\plot_randomization_inference_fe.py",
+  "generated_at": "2025-11-23T10:49:39.939122Z",
+  "features_file": "S:\\aiinfra-econ\\data\\processed\\features_lean_imputed.csv",
+  "vars_run": [
+    "trade_exposure",
+    "gov_index_zmean",
+    "inflation_consumer_prices_pct"
+  ],
+  "results": [
+    {
+      "variable": "trade_exposure",
+      "result": {
+        "variable": "trade_exposure",
+        "error": "observed_failed",
+        "observed_details": {
+          "notes": [
+            "insufficient_rows_after_dropna:0"
+          ]
+        }
+      }
+    },
+    {
+      "variable": "gov_index_zmean",
+      "result": {
+        "variable": "gov_index_zmean",
+        "error": "observed_failed",
+        "observed_details": {
+          "notes": [
+            "insufficient_rows_after_dropna:0"
+          ]
+        }
+      }
+    },
+    {
+      "variable": "inflation_consumer_prices_pct",
+      "result": {
+        "variable": "inflation_consumer_prices_pct",
+        "error": "observed_failed",
+        "observed_details": {
+          "notes": [
+            "insufficient_rows_after_dropna:0"
+          ]
+        }
+      }
+    }
+  ]
+}

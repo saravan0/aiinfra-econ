@@ -1,0 +1,26 @@
+2025-11-22 13:01:14,863 INFO Saved json -> reports\model_metadata.json
+2025-11-22 13:01:14,868 WARNING Stability gate raised: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+2025-11-22 13:01:14,890 INFO Loaded features: 6940 rows, 20 cols
+2025-11-22 13:01:14,895 INFO Saved training index -> artifacts\train_index.csv
+2025-11-22 13:01:14,895 INFO Running OLS baseline (cluster=iso3)
+2025-11-22 13:01:14,899 INFO Fitting OLS with cluster-robust SEs (cluster_on=iso3).
+2025-11-22 13:01:14,915 INFO Saved model -> models\ols_model.joblib
+2025-11-22 13:01:14,915 INFO OLS completed. n_obs=3390
+2025-11-22 13:01:14,915 INFO Running Fixed Effects (entity=iso3)
+2025-11-22 13:01:14,915 INFO run_fixed_effects: starting (entity=iso3, min_obs=3)
+2025-11-22 13:01:14,922 INFO Appended 189 country fixed-effect columns (prefix=FE).
+2025-11-22 13:01:14,922 INFO run_fixed_effects: FE expansion produced 189 cols (sample)
+2025-11-22 13:01:14,980 INFO run_fixed_effects: dropping low-support FE dummies: ['FE_TUV']
+2025-11-22 13:01:15,006 INFO DEBUG FE DESIGN COLS: ['gov_index_zmean', 'trade_exposure', 'inflation_consumer_prices_pct', 'FE_AFG', 'FE_AGO', 'FE_ALB', 'FE_ARE', 'FE_ARG', 'FE_ARM', 'FE_ATG', 'FE_AUS', 'FE_AUT', 'FE_AZE', 'FE_BDI', 'FE_BEL', 'FE_BEN', 'FE_BFA', 'FE_BGD', 'FE_BGR', 'FE_BHR', 'FE_BHS', 'FE_BIH', 'FE_BLR', 'FE_BLZ', 'FE_BOL', 'FE_BRA', 'FE_BRB', 'FE_BRN', 'FE_BTN', 'FE_BWA', 'FE_CAF', 'FE_CAN', 'FE_CHE', 'FE_CHL', 'FE_CHN', 'FE_CIV', 'FE_CMR', 'FE_COD', 'FE_COG', 'FE_COL', 'FE_COM', 'FE_CPV', 'FE_CRI', 'FE_CYM', 'FE_CYP', 'FE_CZE', 'FE_DEU', 'FE_DJI', 'FE_DMA', 'FE_DNK', 'FE_DOM', 'FE_DZA', 'FE_ECU', 'FE_EGY', 'FE_ESP', 'FE_EST', 'FE_ETH', 'FE_FIN', 'FE_FJI', 'FE_FRA']
+2025-11-22 13:01:15,028 INFO run_fixed_effects: FE fit starting (n_obs=3390, n_cols=192)
+2025-11-22 13:01:15,228 INFO run_fixed_effects: FE fit complete. n_obs=3390, n_cols=192
+2025-11-22 13:01:15,307 INFO Saved model -> models\fe_model.joblib
+2025-11-22 13:01:15,307 INFO FE completed. n_obs=3390
+2025-11-22 13:01:15,307 INFO Running ElasticNetCV (cv=5 l1_ratio=0.5)
+2025-11-22 13:01:15,393 INFO Saved model -> models\elasticnet_cv.joblib
+2025-11-22 13:01:15,393 INFO ElasticNet completed. n_obs=3390
+2025-11-22 13:01:15,395 INFO Wrote model table -> reports\model_table.csv
+2025-11-22 13:01:15,774 INFO Saved plot -> reports\model_plots.png
+2025-11-22 13:01:15,815 INFO Saved json -> reports\model_artifacts_manifest.json
+2025-11-22 13:01:15,899 INFO Artifact save results: saved=['ols_result', 'fe_result', 'en_model', 'feature_names.json', 'scaler.joblib', 'scaler_meta.json', 'fe_param_map.json', 'manifest'] errors=[]
+2025-11-22 13:01:15,900 INFO Model run complete. Artifacts written to models and reports

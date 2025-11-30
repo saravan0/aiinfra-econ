@@ -1,0 +1,20 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\generate_baseline_snapshot.py",
+  "generated_at_utc": "2025-11-22T19:29:30.085780Z",
+  "vars": [
+    "trade_exposure",
+    "gov_index_zmean",
+    "inflation_consumer_prices_pct"
+  ],
+  "features_file": "data\\processed\\features_lean_imputed.csv",
+  "features_sha256": "72ce0c9e9202ece56b94d99823af5e18c8b4a002c04e5b9fc7a07163ea171edd",
+  "produced_files": [
+    "reports\\generate_baseline_snapshot\\files\\standardized\\trade_exposure_standardized.json",
+    "reports\\generate_baseline_snapshot\\files\\standardized\\trade_exposure_summary.json",
+    "reports\\generate_baseline_snapshot\\files\\standardized\\gov_index_zmean_standardized.json",
+    "reports\\generate_baseline_snapshot\\files\\standardized\\gov_index_zmean_summary.json",
+    "reports\\generate_baseline_snapshot\\files\\standardized\\inflation_consumer_prices_pct_standardized.json",
+    "reports\\generate_baseline_snapshot\\files\\standardized\\inflation_consumer_prices_pct_summary.json"
+  ],
+  "git_commit": "5958ee3b0ab43813749922778fb964f3e926bca0"
+}

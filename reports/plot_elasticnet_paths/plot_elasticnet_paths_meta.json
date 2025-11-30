@@ -1,0 +1,21 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\plot_elasticnet_paths.py",
+  "generated_at_utc": "2025-11-22T20:38:21.223682+00:00Z",
+  "features_file": "data/processed/features_lean_imputed.csv",
+  "features_sha256": "72ce0c9e9202ece56b94d99823af5e18c8b4a002c04e5b9fc7a07163ea171edd",
+  "vars": [
+    "trade_exposure",
+    "gov_index_zmean",
+    "inflation_consumer_prices_pct"
+  ],
+  "target": "gdp_growth_pct",
+  "produced_files": [
+    "reports\\plot_elasticnet_paths\\files\\en_path.png",
+    "reports\\plot_elasticnet_paths\\files\\en_path.pdf",
+    "reports\\plot_elasticnet_paths\\files\\en_path.svg",
+    "reports\\plot_elasticnet_paths\\files\\en_cv_mse.png",
+    "reports\\plot_elasticnet_paths\\files\\en_cv_mse.pdf",
+    "reports\\plot_elasticnet_paths\\files\\en_cv_mse.svg",
+    "reports\\plot_elasticnet_paths\\files\\en_cv_selected_coefs.csv"
+  ]
+}

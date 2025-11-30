@@ -1,0 +1,53 @@
+{
+  "generated_at": "2025-11-21T22:09:01Z",
+  "files": {
+    "data\\interim\\wgi_econ_master_raw.csv": {
+      "sha1": "bf77562fe7b715de0a472e99393b5fdf32b9595c",
+      "size": 2310168
+    },
+    "data\\interim\\wgi_econ_master_missingness.csv": {
+      "sha1": "b7ed7f7a779960dbd43697ba0d648dbbbbf3dace",
+      "size": 1135
+    },
+    "data\\interim\\wgi_econ_master.csv": {
+      "sha1": "941734508ac0f6ed3dc39c4790a8224828cd8361",
+      "size": 2256177
+    },
+    "data\\interim\\panel_union.csv": {
+      "sha1": "941734508ac0f6ed3dc39c4790a8224828cd8361",
+      "size": 2256177
+    },
+    "data\\interim\\panel_core.csv": {
+      "sha1": "af95f55864c5413e8bd09dff5c1ac133584464b1",
+      "size": 1747189
+    },
+    "data\\processed\\features.csv": {
+      "sha1": "016a1fa9e06017cc9fd0292d4109bc65049dfbe7",
+      "size": 5672367
+    },
+    "data\\processed\\features_lean.csv": {
+      "sha1": "a97ff1545a4435c9daaa836afbe7249fd038d95c",
+      "size": 1834575
+    },
+    "data\\interim\\column_provenance_summary.csv": {
+      "sha1": "8913d83a552202b1bf1251e823863a19129e1565",
+      "size": 2410
+    },
+    "data\\raw\\mappings\\column_map_with_provenance.csv": {
+      "sha1": "ddc35eac68433dad967c6ec45db56ccd50ed4c41",
+      "size": 2410
+    },
+    "data\\interim\\monetary_scale_check.csv": {
+      "sha1": "e57fe64d268fe3f0262b70d0bf9322b2d293da14",
+      "size": 568
+    },
+    "data\\interim\\top_correlations.csv": {
+      "sha1": "ee83ca2ee120935c3727032bd3e20902143ed5f4",
+      "size": 96390
+    },
+    "data\\interim\\vif.csv": {
+      "sha1": "315fdd7b897e8d742fd05173c8b74acdb9533f46",
+      "size": 995
+    }
+  }
+}

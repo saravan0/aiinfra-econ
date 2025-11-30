@@ -1,0 +1,11 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\extract_variable_effects.py",
+  "features": "S:\\aiinfra-econ\\data\\processed\\features_lean_imputed.csv",
+  "artifacts_dir": "S:\\aiinfra-econ\\artifacts",
+  "variables": [
+    "trade_exposure",
+    "gov_index_zmean",
+    "inflation_consumer_prices_pct"
+  ],
+  "generated_at_utc": "2025-11-22T07:32:59.552646+00:00Z"
+}

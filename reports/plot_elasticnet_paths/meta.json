@@ -1,0 +1,16 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\plot_elasticnet_paths.py",
+  "generated_at_utc": "2025-11-22T20:51:11.096190Z",
+  "produced_files": [
+    "reports\\plot_elasticnet_paths\\files\\en_cv_mse.pdf",
+    "reports\\plot_elasticnet_paths\\files\\en_cv_mse.png",
+    "reports\\plot_elasticnet_paths\\files\\en_cv_mse.svg",
+    "reports\\plot_elasticnet_paths\\files\\en_cv_selected_coefs.csv",
+    "reports\\plot_elasticnet_paths\\files\\en_path.pdf",
+    "reports\\plot_elasticnet_paths\\files\\en_path.png",
+    "reports\\plot_elasticnet_paths\\files\\en_path.svg"
+  ],
+  "features_file": "data\\processed\\features_lean_imputed.csv",
+  "features_sha256": "72ce0c9e9202ece56b94d99823af5e18c8b4a002c04e5b9fc7a07163ea171edd",
+  "git_commit": "5958ee3b0ab43813749922778fb964f3e926bca0"
+}

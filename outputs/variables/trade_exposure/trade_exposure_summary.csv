@@ -1,0 +1,2 @@
+variable,fe_within_coef,fe_within_std_effect,fe_artifact_coef,fe_artifact_mapped_name,ols_coef,ols_se,ols_pvalue,en_coef_raw,en_coef_scaled,notes
+trade_exposure,0.034906160410541065,0.37089702847983463,0.0350694078908761,x2,0.006798018380361876,0.0022210608810914346,0.0022081446869647798,0.0067815800042265615,0.4072507135185851,

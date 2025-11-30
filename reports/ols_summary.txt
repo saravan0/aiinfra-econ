@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         gdp_growth_pct   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                  0.018
+Method:                 Least Squares   F-statistic:                     21.04
+Date:                Sat, 22 Nov 2025   Prob (F-statistic):           8.37e-12
+Time:                        13:01:20   Log-Likelihood:                -10650.
+No. Observations:                3390   AIC:                         2.131e+04
+Df Residuals:                    3386   BIC:                         2.133e+04
+Df Model:                           3                                         
+Covariance Type:              cluster                                         
+=================================================================================================
+                                    coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+const                             2.9451      0.237     12.407      0.000       2.480       3.410
+gov_index_zmean                  -0.7813      0.156     -5.014      0.000      -1.087      -0.476
+trade_exposure                    0.0068      0.002      3.061      0.002       0.002       0.011
+inflation_consumer_prices_pct    -0.0300      0.007     -4.374      0.000      -0.043      -0.017
+==============================================================================
+Omnibus:                     1291.675   Durbin-Watson:                   1.765
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           212421.917
+Skew:                           0.699   Prob(JB):                         0.00
+Kurtosis:                      41.755   Cond. No.                         182.
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)

@@ -1,0 +1,11 @@
+{
+  "script": "S:\\aiinfra-econ\\scripts\\generate_onepager.py",
+  "generated_at": "2025-11-24T19:58:49.769043Z",
+  "outputs_dir": "S:\\aiinfra-econ\\reports\\onepager\\files",
+  "files": [
+    "S:\\aiinfra-econ\\reports\\onepager\\files\\metadata.json",
+    "S:\\aiinfra-econ\\reports\\onepager\\files\\onepager.md",
+    "S:\\aiinfra-econ\\reports\\onepager\\files\\onepager.png",
+    "S:\\aiinfra-econ\\reports\\onepager\\files\\onepager.svg"
+  ]
+}

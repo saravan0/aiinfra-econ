@@ -1,0 +1,44 @@
+{
+  "var": "inflation_consumer_prices_pct",
+  "sd_target": 5.5232021351783205,
+  "sd_var": 16.157686647591852,
+  "summary": {
+    "FE": {
+      "model_type": null,
+      "coef": -0.028691752015965143,
+      "std_err": 0.006594682848898306,
+      "pvalue": 1.3968154549455321e-05,
+      "n_obs": 3390,
+      "mapped_exog_name": null,
+      "mapped_index": null,
+      "standardized": -0.0839354285970577,
+      "magnitude": "moderate"
+    },
+    "OLS": {
+      "model_type": null,
+      "coef": -0.03003560622747332,
+      "std_err": 0.0068673960291871896,
+      "pvalue": 1.2218462369360446e-05,
+      "n_obs": null,
+      "mapped_exog_name": "inflation_consumer_prices_pct",
+      "mapped_index": null,
+      "standardized": -0.08786676674441572,
+      "magnitude": "moderate"
+    },
+    "ElasticNet": {
+      "model_type": null,
+      "coef": -0.02998016760469614,
+      "std_err": null,
+      "pvalue": null,
+      "n_obs": null,
+      "mapped_exog_name": "inflation_consumer_prices_pct",
+      "mapped_index": 2,
+      "standardized": -0.08770458548197332,
+      "magnitude": "moderate"
+    }
+  },
+  "ml_diag": {
+    "elasticnet_vs_ols_ratio": 0.9981542365964808,
+    "elasticnet_shrinkage_abs": true
+  }
+}

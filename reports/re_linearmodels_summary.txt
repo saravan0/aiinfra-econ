@@ -1,0 +1,28 @@
+                        RandomEffects Estimation Summary                        
+================================================================================
+Dep. Variable:         gdp_growth_pct   R-squared:                        0.0146
+Estimator:              RandomEffects   R-squared (Between):             -0.0006
+No. Observations:                3390   R-squared (Within):               0.0147
+Date:                Sat, Nov 22 2025   R-squared (Overall):              0.0134
+Time:                        13:01:20   Log-likelihood                -1.049e+04
+Cov. Estimator:            Unadjusted                                           
+                                        F-statistic:                      16.727
+Entities:                         190   P-value                           0.0000
+Avg Obs:                       17.842   Distribution:                  F(3,3386)
+Min Obs:                       1.0000                                           
+Max Obs:                       23.000   F-statistic (robust):             15.754
+                                        P-value                           0.0000
+Time periods:                      23   Distribution:                  F(3,3386)
+Avg Obs:                       147.39                                           
+Min Obs:                       62.000                                           
+Max Obs:                       184.00                                           
+                                                                                
+                                       Parameter Estimates                                       
+=================================================================================================
+                               Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+-------------------------------------------------------------------------------------------------
+const                             2.4064     0.2810     8.5635     0.0000      1.8554      2.9573
+gov_index_zmean                  -0.6808     0.2018    -3.3738     0.0007     -1.0765     -0.2852
+trade_exposure                    0.0128     0.0027     4.8232     0.0000      0.0076      0.0180
+inflation_consumer_prices_pct    -0.0294     0.0064    -4.5755     0.0000     -0.0420     -0.0168
+=================================================================================================

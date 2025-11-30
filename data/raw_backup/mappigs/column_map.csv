@@ -1,0 +1,31 @@
+source_file,source_column,master_column
+wgi_voice.csv,Country Name,country
+wgi_voice.csv,Country Code,iso3
+wgi_voice.csv,Year,year
+wgi_voice.csv,Estimate,voice_accountability
+
+wgi_polstab.csv,Estimate,political_stability
+wgi_goveff.csv,Estimate,gov_effectiveness
+wgi_regqual.csv,Estimate,reg_quality
+wgi_rulelaw.csv,Estimate,rule_of_law
+wgi_corrupt.csv,Estimate,control_corruption
+
+worldbank_gdp.csv,NY.GDP.MKTP.CD,gdp_usd
+worldbank_gdp.csv,NY.GDP.PCAP.CD,gdp_per_capita_usd
+worldbank_gdp.csv,NY.GDP.MKTP.KD.ZG,gdp_growth_pct
+worldbank_gdp.csv,FP.CPI.TOTL.ZG,inflation_pct
+worldbank_gdp.csv,SL.UEM.TOTL.ZS,unemployment_pct
+worldbank_gdp.csv,NE.EXP.GNFS.CD,exports_usd
+worldbank_gdp.csv,NE.IMP.GNFS.CD,imports_usd
+worldbank_gdp.csv,BX.KLT.DINV.CD.WD,fdi_inflow_usd
+worldbank_gdp.csv,BN.CAB.XOKA.CD,current_account_balance_usd
+worldbank_gdp.csv,NE.TRD.GNFS.ZS,trade_exposure
+
+wto_tariff.csv,avg_tariff_rate,avg_tariff_rate_pct
+wto_tariff.csv,tariff_change,tariff_change_pct
+imf_debt.csv,GGXWDG_NGDP,government_debt_gdp
+noaa_temp.csv,temp_anomaly_degC,temp_anomaly_degC
+noaa_temp.csv,temp_anom_roll,temp_anom_roll
+berkeley_co2.csv,co2_emissions_tonnes,co2_emissions_tonnes
+gwatch_climate.csv,climate_risk_index,climate_risk_index
+atlas_exportcomplex.csv,eci,export_complexity_index

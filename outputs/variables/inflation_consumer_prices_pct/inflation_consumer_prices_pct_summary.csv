@@ -1,0 +1,2 @@
+variable,fe_within_coef,fe_within_std_effect,fe_artifact_coef,fe_artifact_mapped_name,ols_coef,ols_se,ols_pvalue,en_coef_raw,en_coef_scaled,notes
+inflation_consumer_prices_pct,-0.028691752015965143,-0.08072335111525217,-0.027988828990927368,x3,-0.03003560622747332,0.0068673960291871896,1.2218462369360446e-05,-0.02998016760469614,-0.4767117550186125,

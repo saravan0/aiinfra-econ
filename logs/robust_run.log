@@ -1,0 +1,22 @@
+2025-11-22 13:01:20,198 INFO ROBUSTNESS RUN STARTING — config=S:\aiinfra-econ\config\model.yml
+2025-11-22 13:01:20,247 INFO Loading features file: S:\aiinfra-econ\data\processed\features_lean_imputed.csv
+2025-11-22 13:01:20,290 INFO safe_load_features loaded rows=6940 cols=20
+2025-11-22 13:01:20,290 INFO Loaded features for robustness: 6940 rows, 20 cols
+2025-11-22 13:01:20,295 WARNING Stability gate invocation raised: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>
+2025-11-22 13:01:20,654 INFO linearmodels available — attempting PanelOLS Driscoll–Kraay.
+2025-11-22 13:01:20,678 WARNING PanelOLS driscoll fit failed: 'Unknown covariance estimator type.'
+2025-11-22 13:01:20,712 INFO PanelOLS fit successful using cov_type='kernel'.
+2025-11-22 13:01:20,753 INFO Saved model -> models\robust_ols_cluster.joblib
+2025-11-22 13:01:20,767 INFO Saved text -> reports\ols_summary.txt
+2025-11-22 13:01:20,770 INFO Running RandomEffects (linearmodels).
+2025-11-22 13:01:20,886 INFO Saved text -> reports\re_linearmodels_summary.txt
+2025-11-22 13:01:22,392 INFO Saved diagnostics plot -> reports\robustness_plots.png
+2025-11-22 13:01:22,405 INFO Saved VIF summary -> reports\robustness_vif.csv
+2025-11-22 13:01:22,405 WARNING GDP column 'gdp_usd' not present; sensitivity test skipped.
+2025-11-22 13:01:22,428 INFO Wrote robustness card -> reports\robustness_card.md
+S:\aiinfra-econ\src\model\robustness.py:683: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  generated_ts = datetime.utcnow().isoformat() + "Z"
+2025-11-22 13:01:22,431 INFO Saved json -> reports\robustness_manifest.json
+2025-11-22 13:01:22,431 INFO Saved manifest -> reports\robustness_manifest.json
+2025-11-22 13:01:22,440 INFO Appended 12 rows to model table -> reports\model_table.csv
+2025-11-22 13:01:22,440 INFO Robustness run complete. Artifacts written to models and reports

@@ -1,0 +1,44 @@
+{
+  "var": "trade_exposure",
+  "sd_target": 5.5232021351783205,
+  "sd_var": 59.57420305984167,
+  "summary": {
+    "FE": {
+      "model_type": null,
+      "coef": 0.034906160410541065,
+      "std_err": 0.004439446451147109,
+      "pvalue": 5.0110952605503344e-15,
+      "n_obs": 3390,
+      "mapped_exog_name": null,
+      "mapped_index": null,
+      "standardized": 0.3765038174308718,
+      "magnitude": "large"
+    },
+    "OLS": {
+      "model_type": null,
+      "coef": 0.006798018380361876,
+      "std_err": 0.0022210608810914346,
+      "pvalue": 0.0022081446869647798,
+      "n_obs": null,
+      "mapped_exog_name": "trade_exposure",
+      "mapped_index": null,
+      "standardized": 0.07332458915757917,
+      "magnitude": "moderate"
+    },
+    "ElasticNet": {
+      "model_type": null,
+      "coef": 0.0067815800042265615,
+      "std_err": null,
+      "pvalue": null,
+      "n_obs": null,
+      "mapped_exog_name": "trade_exposure",
+      "mapped_index": 1,
+      "standardized": 0.07314728202054323,
+      "magnitude": "moderate"
+    }
+  },
+  "ml_diag": {
+    "elasticnet_vs_ols_ratio": 0.9975818870712675,
+    "elasticnet_shrinkage_abs": true
+  }
+}
