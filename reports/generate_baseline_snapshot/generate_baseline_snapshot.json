@@ -2,30 +2,30 @@
   "entries": [
     {
       "variable": "trade_exposure",
-      "generated_at_utc": "2025-11-30T10:28:22.660268+00:00",
+      "generated_at_utc": "2025-12-17T18:24:38.637841+00:00",
       "provenance": {
         "standardized_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\trade_exposure_standardized.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/standardized/trade_exposure_standardized.json",
           "sha256": "c18e182c3a481d373861d8fffe6e570057442a81f86661d35764aeed85ffb325",
           "size": 1200
         },
         "lowess_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_trade_exposure.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/lowess_json_trade_exposure.json",
           "sha256": "17df4926b5495455e69a4ee4d17fcfd2e9baa5b4ccc85d856ee7d7c90d5582fe",
           "size": 5557
         },
         "shap_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_trade_exposure.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/shap_json_trade_exposure.json",
           "sha256": "fca49ee29aaaacc33a34871ccb1b20ca72f59b72a3424001a19db06645dceaa3",
           "size": 496
         },
         "rolling_h1_csv": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+          "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h1.csv",
           "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
           "size": 1218
         },
         "rolling_h3_csv": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+          "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h3.csv",
           "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
           "size": 1096
         }
@@ -50,30 +50,30 @@
     },
     {
       "variable": "gov_index_zmean",
-      "generated_at_utc": "2025-11-30T10:28:22.707498+00:00",
+      "generated_at_utc": "2025-12-17T18:24:39.387920+00:00",
       "provenance": {
         "standardized_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\gov_index_zmean_standardized.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/standardized/gov_index_zmean_standardized.json",
           "sha256": "1e1bb6b3a61d62f828d6ef95313784ae60c4e1af920776c0d942b24c08e92db1",
           "size": 1195
         },
         "lowess_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_gov_index_zmean.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/lowess_json_gov_index_zmean.json",
           "sha256": "bc2a455bca57755b01f6edde25f4e0a45855b0b3624b4220149ea7afc724925e",
           "size": 6053
         },
         "shap_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_gov_index_zmean.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/shap_json_gov_index_zmean.json",
           "sha256": "f778bdcf65e193fd6c7208c66ff2635d286c0800ca74c1a8695b700078346597",
           "size": 472
         },
         "rolling_h1_csv": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+          "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h1.csv",
           "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
           "size": 1218
         },
         "rolling_h3_csv": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+          "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h3.csv",
           "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
           "size": 1096
         }
@@ -98,30 +98,30 @@
     },
     {
       "variable": "inflation_consumer_prices_pct",
-      "generated_at_utc": "2025-11-30T10:28:22.760028+00:00",
+      "generated_at_utc": "2025-12-17T18:24:40.177804+00:00",
       "provenance": {
         "standardized_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\inflation_consumer_prices_pct_standardized.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/standardized/inflation_consumer_prices_pct_standardized.json",
           "sha256": "b76833fb4ec4443a1b7f0ab7f01e818c3a5840b9dcf7c4136457d90bfd3e26e9",
           "size": 1253
         },
         "lowess_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_inflation_consumer_prices_pct.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/lowess_json_inflation_consumer_prices_pct.json",
           "sha256": "160a2ea41728d0f14154581c69193986b9479c097a7fda52d8b5062b3df490c1",
           "size": 6197
         },
         "shap_json": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_inflation_consumer_prices_pct.json",
+          "path": "/app/reports/generate_baseline_snapshot/files/shap_json_inflation_consumer_prices_pct.json",
           "sha256": "26c46574b916f2e2a5f479e3d561d6307a6e4fe9a9a102a2e863f8132230fb72",
           "size": 557
         },
         "rolling_h1_csv": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+          "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h1.csv",
           "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
           "size": 1218
         },
         "rolling_h3_csv": {
-          "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+          "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h3.csv",
           "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
           "size": 1096
         }
@@ -145,5 +145,5 @@
       "notes": []
     }
   ],
-  "generated_at_utc": "2025-11-30T10:28:22.809480+00:00"
+  "generated_at_utc": "2025-12-17T18:24:41.170806+00:00"
 }

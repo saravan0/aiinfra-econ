@@ -1,5 +1,5 @@
 # Baseline snapshot
-Generated: 2025-11-30T10:28:22.815422+00:00
+Generated: 2025-12-17T18:24:41.249478+00:00
 
 ## trade_exposure
 

@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2025-11-30T10:29:28.792172+00:00",
-  "core_png": "reports\\onepager\\files\\onepager_core.png",
-  "core_svg": "reports\\onepager\\files\\onepager_core.svg",
-  "support_png": "reports\\onepager\\files\\onepager_support.png",
-  "support_svg": "reports\\onepager\\files\\onepager_support.svg",
-  "markdown": "reports\\onepager\\files\\onepager.md",
+  "generated_at_utc": "2025-12-17T18:24:51.945702+00:00",
+  "core_png": "reports/onepager/files/onepager_core.png",
+  "core_svg": "reports/onepager/files/onepager_core.svg",
+  "support_png": "reports/onepager/files/onepager_support.png",
+  "support_svg": "reports/onepager/files/onepager_support.svg",
+  "markdown": "reports/onepager/files/onepager.md",
   "inputs": {
     "shap": {
       "trade_exposure": "reports/plot_shap_elasticnet/trade_exposure/shap_3panel_trade_exposure.png"

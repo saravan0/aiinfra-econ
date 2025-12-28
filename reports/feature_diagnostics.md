@@ -1,9 +1,9 @@
-# Feature diagnostics — Generated: 2025-11-22T06:23:10.034042Z
+# Feature diagnostics — Generated: 2025-12-02T14:14:49.214070Z
 
 ## Summary (per-feature)
 - Total features (numeric): 18
-- Correlation threshold (flag): 0.75
-- Missingness threshold (flag %): 40.0
+- Correlation threshold (flag): 0.8
+- Missingness threshold (flag %): 50.0
 - Zero-fraction threshold (flag): 0.9
 
 ## High-missing features
@@ -16,7 +16,7 @@
 ## Many-zeros features
 - None
 
-## High-correlation pairs (abs(corr) >= 0.75)
+## High-correlation pairs (abs(corr) >= 0.80)
 - gov_index_zmean <-> gdp_per_capita_usd_ln_safe: corr=0.814
 - gov_index_zmean <-> voice_accountability_imputed: corr=0.865
 - gov_index_zmean <-> political_stability_imputed: corr=0.838
@@ -32,7 +32,6 @@
 - gdp_per_capita_usd_ln_safe <-> gov_effectiveness_imputed: corr=0.842
 - gdp_per_capita_usd_ln_safe <-> reg_quality_imputed: corr=0.814
 - gdp_per_capita_usd_ln_safe <-> rule_of_law_imputed: corr=0.802
-- gdp_per_capita_usd_ln_safe <-> control_corruption_imputed: corr=0.775
 - exports_usd_ln_safe <-> imports_usd_ln_safe: corr=0.985
 - exports_usd_ln_safe <-> fdi_inflow_usd_ln_safe: corr=0.891
 - exports_usd_ln_safe <-> current_account_balance_usd_ln_safe: corr=0.830
@@ -40,11 +39,7 @@
 - imports_usd_ln_safe <-> fdi_inflow_usd_ln_safe: corr=0.885
 - imports_usd_ln_safe <-> current_account_balance_usd_ln_safe: corr=0.810
 - imports_usd_ln_safe <-> total_reserves_usd_ln_safe: corr=0.854
-- current_account_balance_usd_ln_safe <-> total_reserves_usd_ln_safe: corr=0.754
-- voice_accountability_imputed <-> reg_quality_imputed: corr=0.752
 - voice_accountability_imputed <-> rule_of_law_imputed: corr=0.805
-- voice_accountability_imputed <-> control_corruption_imputed: corr=0.778
-- political_stability_imputed <-> rule_of_law_imputed: corr=0.777
 - gov_effectiveness_imputed <-> reg_quality_imputed: corr=0.936
 - gov_effectiveness_imputed <-> rule_of_law_imputed: corr=0.941
 - gov_effectiveness_imputed <-> control_corruption_imputed: corr=0.925

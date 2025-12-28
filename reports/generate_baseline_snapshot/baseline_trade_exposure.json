@@ -1,29 +1,29 @@
 {
   "variable": "trade_exposure",
-  "generated_at_utc": "2025-11-30T10:28:22.660268+00:00",
+  "generated_at_utc": "2025-12-17T18:24:38.637841+00:00",
   "provenance": {
     "standardized_json": {
-      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\standardized\\trade_exposure_standardized.json",
+      "path": "/app/reports/generate_baseline_snapshot/files/standardized/trade_exposure_standardized.json",
       "sha256": "c18e182c3a481d373861d8fffe6e570057442a81f86661d35764aeed85ffb325",
       "size": 1200
     },
     "lowess_json": {
-      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\lowess_json_trade_exposure.json",
+      "path": "/app/reports/generate_baseline_snapshot/files/lowess_json_trade_exposure.json",
       "sha256": "17df4926b5495455e69a4ee4d17fcfd2e9baa5b4ccc85d856ee7d7c90d5582fe",
       "size": 5557
     },
     "shap_json": {
-      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\files\\shap_json_trade_exposure.json",
+      "path": "/app/reports/generate_baseline_snapshot/files/shap_json_trade_exposure.json",
       "sha256": "fca49ee29aaaacc33a34871ccb1b20ca72f59b72a3424001a19db06645dceaa3",
       "size": 496
     },
     "rolling_h1_csv": {
-      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h1.csv",
+      "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h1.csv",
       "sha256": "925da0e05220793808f4deba1de0a9647e6885fbe7ac8de01fbc1cb0731ceada",
       "size": 1218
     },
     "rolling_h3_csv": {
-      "path": "S:\\aiinfra-econ\\reports\\generate_baseline_snapshot\\provenance\\rolling_validation_rmse_table_h3.csv",
+      "path": "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h3.csv",
       "sha256": "99ec9e8aa21080f7b00647dd0cbfd1c1559069909a270c6fbc1a5164e5c2a73c",
       "size": 1096
     }

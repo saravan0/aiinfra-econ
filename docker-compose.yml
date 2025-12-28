@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  aiinfra-econ:
+    build: .
+    container_name: aiinfra-econ
+    volumes:
+      - ./reports:/app/reports
+      - ./artifacts:/app/artifacts
+    command: bash run_pipeline.sh
