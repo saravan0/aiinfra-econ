@@ -169,21 +169,6 @@ A methodological paper documenting the design, execution, and evaluation of this
 
 Persistent links will be added once public.
 
-## Repository Structure
-
-.
-├── src/                # Data preparation, modeling, and diagnostics
-├── scripts/            # Entry-point and orchestration scripts
-├── config/             # Explicit JSON configurations
-├── reports/            # Generated figures, diagnostics, and summaries
-│   ├── onepager/
-│   ├── snapshots/
-│   └── diagnostics/
-├── artifacts/          # Serialized intermediate outputs
-├── Dockerfile
-├── docker-compose.yml
-└── README.md
-
 ## License and Citation
 
 * **License:** MIT License
