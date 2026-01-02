@@ -1,11 +1,11 @@
-#!/usr/bin/env python3
 """
-scripts/health_check.py
+Cross-platform health checks for the modeling pipeline.
 
-Cross-platform health check that mirrors the PowerShell behavior.
-Usage:
-    python scripts/health_check.py --config config/model.yml
+Design notes:
+ - Verifies environment compatibility and configuration consistency.
+ - Mirrors platform-specific checks to ensure equivalent behavior across systems.
 """
+
 from __future__ import annotations
 import argparse
 import subprocess

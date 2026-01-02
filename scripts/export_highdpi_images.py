@@ -1,16 +1,13 @@
-#!/usr/bin/env python3
 """
-Export high-DPI copies of all image files inside `reports/` preserving format.
+Export high-DPI copies of image artifacts while preserving file formats.
 
-Rules:
- - SVG  → copy as-is (vector; cannot be upscaled meaningfully)
- - PNG  → resave as PNG with DPI metadata = 600
- - JPG  → resave as JPG with DPI metadata = 600
- - No conversion between formats
- - Output folder: outputs/paper_images/<same-subfolders>
+Produces:
+ - outputs/paper_images/ (mirrored directory structure)
 
-Usage:
-    python scripts/export_highdpi_images.py
+Design notes:
+ - SVG files are copied without modification.
+ - PNG and JPG files are resaved with DPI metadata set to 600.
+ - No format conversion is performed during export.
 """
 
 from pathlib import Path

@@ -1,19 +1,14 @@
-# src/data/harmonize.py
 """
-Data Harmonization Orchestrator
+Orchestrate data harmonization into canonical, model-ready panels.
 
-This module runs a minimal, reproducible sequence of steps:
-  1. Validate raw WDI/WGI files and mapping tables
-  2. Generate WDI long-format table
-  3. Build WGI → ECON master (raw)
-  4. Run a basic QA (missingness, ranges)
-  5. Produce default panel_union and panel_core extractions
-  6. Write a harmonization manifest (timestamps + created files)
+Produces:
+ - data/interim/panel_union.csv
+ - data/interim/panel_core.csv
+ - harmonization manifest (timestamps and created artifacts)
 
-The module is intentionally lightweight. It does not perform heavy
-transformations itself; instead it calls underlying scripts that
-handle their respective domain logic. This keeps the harmonization
-stage easy to audit and reason about.
+Design notes:
+ - Coordinates validation, merging, and basic QA without performing heavy transformations.
+ - Delegates domain-specific logic to underlying pipeline components.
 """
 
 from __future__ import annotations

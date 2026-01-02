@@ -1,15 +1,3 @@
-# src/model/model_defs.py
-"""
-Model helpers: design matrix preparation, fixed-effects expansion, and lightweight checks.
-
-This module keeps modeling utilities small and well-tested:
-- prepare_design_matrix: builds numpy X and column labels (optionally adds constant)
-- country_fixed_effects: append country dummy variables (drop_first option)
-- safe_select_columns: helper that warns about missing predictors
-
-These are intentionally simple, transparent helpers (no hidden magic) so results are
-easy to explain in a methods section or SOP.
-"""
 from __future__ import annotations
 from typing import Iterable, List, Tuple
 from pathlib import Path

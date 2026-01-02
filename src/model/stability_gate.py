@@ -1,25 +1,15 @@
-# src/model/stability_gate.py
 """
-Stability Gate — Sample Integrity Check for the Modeling Pipeline
-
-This module enforces minimum sample quality before any downstream
-econometric or ML modeling steps are executed. It acts as a safeguard
-against silent dataset degradation, ensuring that the modeling stage
-is only reached when the predictor set remains sufficiently complete
-and statistically usable.
+Enforce minimum sample integrity conditions before downstream modeling.
 
 Inputs:
-  • reports/predictor_stability.csv
+ - reports/predictor_stability.csv
 
-Enforced Conditions:
-  • Minimum required sample size for the combined baseline + extras
-    predictor set (n_core_plus_extras ≥ MIN_REQUIRED).
-  • Minimum per-predictor coverage threshold (pct ≥ MIN_COVERAGE_PCT).
+Enforced conditions:
+ - Minimum required sample size for the active predictor set.
+ - Minimum per-predictor coverage threshold.
 
-If any condition fails, the pipeline terminates with a clear diagnostic
-message. This prevents weak or unstable models from being fitted due to
-insufficient coverage or collapsed sample size — a critical requirement
-for reproducibility, robustness, and research-grade reliability.
+Behavior:
+ - Terminates the pipeline with a diagnostic message if conditions are not met.
 """
 
 from __future__ import annotations

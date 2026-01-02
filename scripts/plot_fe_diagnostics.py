@@ -1,20 +1,16 @@
-#!/usr/bin/env python3
 """
-plot_fe_diagnostics — Research-grade fixed-effects diagnostics & robustness checker.
+Generate fixed-effects diagnostics and robustness analyses.
 
-Produces (under reports/plot_fe_diagnostics_research/):
-  - files/*.png|.pdf|.svg         (diagnostic figures)
-  - files/standardized/*          (copied standardized jsons, if present)
-  - files/artifacts/*             (copied joblib artifacts, if present)
-  - files/fe_diagnostics_result.joblib
-  - files/robustness/*.csv/.json  (robustness tables)
-  - meta.json                     (provenance: args, hashes, produced files, git)
-  - summary/fe_diagnostics_summary.json (human-readable summary)
+Produces:
+ - reports/plot_fe_diagnostics_research/ (figures, tables, and saved artifacts)
+ - reports/plot_fe_diagnostics_research/meta.json
+ - reports/plot_fe_diagnostics_research/summary/fe_diagnostics_summary.json
 
-Usage:
-  python scripts/plot_fe_diagnostics.py --vars trade_exposure gov_index_zmean inflation_consumer_prices_pct
-  python scripts/plot_fe_diagnostics.py --vars trade_exposure ... --cluster-col iso3 --winsor-pcts 0.01 0.02
+Design notes:
+ - Generates diagnostic figures and robustness tables for fixed-effects models.
+ - Records provenance and summary information for reproducibility.
 """
+
 from __future__ import annotations
 
 import argparse

@@ -1,21 +1,17 @@
 """
-ElasticNet coefficient path & CV diagnostics
+Generate ElasticNet coefficient path and cross-validation diagnostics.
 
-Publication-ready figures:
-  reports/plot_elasticnet_paths/files/en_path.(pdf|svg|png)
-  reports/plot_elasticnet_paths/files/en_cv_mse.(pdf|svg|png)
-  reports/plot_elasticnet_paths/files/en_cv_selected_coefs.csv
-  reports/plot_elasticnet_paths/meta.json
+Produces:
+ - reports/plot_elasticnet_paths/files/en_path.(pdf|svg|png)
+ - reports/plot_elasticnet_paths/files/en_cv_mse.(pdf|svg|png)
+ - reports/plot_elasticnet_paths/files/en_cv_selected_coefs.csv
+ - reports/plot_elasticnet_paths/meta.json
 
-Features of this version (journal-ready):
- - Vector-first output (PDF + SVG) with embedded TrueType fonts (pdf.fonttype=42)
- - High-resolution PNG export for raster needs (dpi default 600)
- - Clean typography and smaller, publication-appropriate title
- - Colorblind-safe palette and clear line weights
- - Explicit annotation for selected alpha (vertical line + boxed label)
- - Exports metadata (sha256 of features file, git commit)
- - Robust I/O and helpful INFO logs
+Design notes:
+ - Visualizes coefficient trajectories and cross-validation behavior.
+ - Records metadata and provenance for generated artifacts.
 """
+
 from __future__ import annotations
 import argparse
 import hashlib

@@ -1,7 +1,7 @@
 {
   "script": "/app/scripts/generate_baseline_snapshot.py",
-  "generated_at_utc": "2025-12-17T18:24:42.233595+00:00",
-  "git_commit": "a716ee6d3285815e8a2028706ec33e2988cbddd7",
+  "generated_at_utc": "2026-01-02T07:56:07.694799+00:00",
+  "git_commit": "24674d19451eefd39448e07711e54ba9bae4ff47",
   "python_version": "3.11.14",
   "requirements_hash": "9c0da1b2fd5f2132de35646682fa5501e6c274fde88830a258a17d40eaa40380",
   "features_sha256": "72ce0c9e9202ece56b94d99823af5e18c8b4a002c04e5b9fc7a07163ea171edd",
@@ -54,5 +54,5 @@
     "/app/reports/generate_baseline_snapshot/provenance/rolling_validation_rmse_table_h3.csv",
     "/app/reports/generate_baseline_snapshot/provenance/scaler.joblib"
   ],
-  "elapsed_seconds": 4.67
+  "elapsed_seconds": 4.92
 }

@@ -1,14 +1,14 @@
-# src/model/predictor_coverage.py
 """
-Predictor coverage analysis for the One Piece.
+Predictor coverage diagnostics for the canonical modeling dataset.
 
-Outputs -> reports/
- - predictor_coverage.csv        (per-predictor: n_nonnull, pct_nonnull)
- - coverage_by_year.csv          (rows: year x predictor -> pct_nonnull)
- - coverage_by_country_top.csv   (top 50 countries coverage summary)
- - predictor_coverage.md         (short textual summary + remediation hints)
- - reports/predictor_coverage_heatmap.png (year x predictor heatmap)
+Produces (in reports/):
+ - predictor_coverage.csv          (per-predictor non-null counts and percentages)
+ - coverage_by_year.csv            (year × predictor coverage rates)
+ - coverage_by_country_top.csv     (coverage summary for top countries)
+ - predictor_coverage.md           (textual summary and remediation notes)
+ - predictor_coverage_heatmap.png  (year × predictor coverage heatmap)
 """
+
 from __future__ import annotations
 import json
 from pathlib import Path

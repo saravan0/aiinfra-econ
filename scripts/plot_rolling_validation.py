@@ -1,6 +1,17 @@
-#!/usr/bin/env python3
-from __future__ import annotations
+"""
+Generate rolling forecast validation diagnostics over time.
 
+Produces:
+ - reports/plot_rolling_validation/ (figures and tabular summaries)
+ - reports/plot_rolling_validation/meta.json
+
+Design notes:
+ - Evaluates temporal forecast performance using rolling or expanding-window schemes.
+ - Summarizes stability and degradation of predictive accuracy across horizons.
+ - Records provenance information for reproducibility.
+"""
+
+from __future__ import annotations
 import argparse
 import hashlib
 import json

@@ -1,22 +1,15 @@
 """
-plot_comparative_model_effects — Comparative forest plot of model effects
+Generate a comparative forest plot of standardized model effects.
 
-Forest plot that visualizes standardized effect sizes (in SD units)
-estimated across three estimation strategies:
-- FE (within-country fixed effects)
-- OLS
-- ElasticNet
+Produces:
+ - reports/plot_comparative_model_effects/files/plot_comparative_model_effects.(png|pdf|svg)
+ - reports/plot_comparative_model_effects/plot_comparative_model_effects_meta.json
 
-Inputs:
-  - Baseline snapshot:
-        reports/generate_baseline_snapshot/generate_baseline_snapshot.json
-  - Comparison table:
-        reports/generate_baseline_snapshot/model_comparison_table.csv
-
-Outputs:
-  reports/plot_comparative_model_effects/files/plot_comparative_model_effects.(png|pdf|svg)
-  reports/plot_comparative_model_effects/plot_comparative_model_effects_meta.json
+Design notes:
+ - Visualizes standardized effect sizes across multiple estimation strategies.
+ - Uses canonical baseline snapshot artifacts as inputs.
 """
+
 from __future__ import annotations
 
 import argparse

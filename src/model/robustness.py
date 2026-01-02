@@ -1,46 +1,22 @@
-# src/model/robustness.py
 """
-Robustness & diagnostics runner for AI-Infra econ (research-grade).
+Run a standardized suite of robustness checks and diagnostic analyses.
 
-Purpose
--------
-Run a standardized suite of robustness checks and diagnostics for
-panel and cross-section inference on the project's economic dataset.
+Produces:
+ - reports/robustness_card.md
+ - reports/robustness_plots.png
+ - reports/robustness_manifest.json
+ - reports/ols_summary.txt
+ - reports/re_summary.txt (when applicable)
+ - reports/robustness_vif.csv
+ - models/robust_*.joblib
+ - appends rows to reports/model_table.csv
 
-What it produces
----------------
-Human-readable artifacts suitable for methods appendices :
- - reports/robustness_card.md         — concise research-grade summary (methods, results, diagnostics, caveats)
- - reports/robustness_plots.png       — panel of diagnostic plots (residuals, QQ, Cook's D, etc.)
- - reports/robustness_manifest.json   — machine-readable manifest of artifacts
- - reports/ols_summary.txt            — plain-text OLS output (copy-paste friendly)
- - reports/re_summary.txt             — Random-Effects / MixedLM summary text (where produced)
- - models/robust_*.joblib             — saved model artifacts
- - reports/robustness_vif.csv         — VIF table for baseline predictors
- - appended rows to reports/model_table.csv for synthesis across runs
-
-Primary methods
----------------
- - Panel-robust inference (Driscoll–Kraay) via linearmodels.PanelOLS when available,
-   falling back to kernel/Bartlett HAC if required.
- - Cluster-robust OLS (cluster on iso3) as the baseline.
- - Random-effects estimation (linearmodels.RandomEffects; fallback to statsmodels.MixedLM).
- - Diagnostics: residual distribution, fitted vs residuals, QQ-plot, Cook's distance, VIF.
- - Sensitivity: re-estimation after dropping the top 1% by GDP to evaluate influence of large economies.
-
-Design principles
------------------
- - Transparent: intermediate objects are saved where feasible; textual summaries are written
-   for easy inclusion in SOPs or methods sections.
- - Reproducible: artifacts and manifests include timestamps and paths for provenance.
- - Conservative fallbacks: if a preferred method/library is unavailable, the script uses
-   robust statistical fallbacks rather than failing silently.
-
-Notes
------
-This module focuses on reporting and diagnostics; modelling decisions (exact predictor
-sets, target variable) are taken from the provided config file and are intentionally not hard-coded.
+Design notes:
+ - Executes panel-robust and cluster-robust estimators with conservative fallbacks.
+ - Generates diagnostic summaries and plots for residual behavior and influence.
+ - Records artifacts and provenance for reproducibility and auditability.
 """
+
 from __future__ import annotations
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple

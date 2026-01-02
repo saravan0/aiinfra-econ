@@ -1,21 +1,13 @@
-# src/data/generate_metadata.py
 """
-Metadata & Provenance Generator
+Generate metadata and provenance summaries for the canonical dataset.
 
-Creates:
-  - data/raw/mappings/column_map_with_provenance.csv
-  - data/interim/column_provenance_summary.csv
+Produces:
+ - data/raw/mappings/column_map_with_provenance.csv
+ - data/interim/column_provenance_summary.csv
 
-Combines:
-  (a) User-defined column mapping file
-  (b) Missingness statistics from the cleaned master table
-
-Intended usage:
-  from src.data.generate_metadata import make_metadata_card
-  make_metadata_card(master_path, mapping_file, out_dir)
-
-This module is kept intentionally modular and lightweight so it can be
-called from any pipeline stage without creating tight coupling.
+Design notes:
+ - Combines user-defined column mappings with dataset-level missingness statistics.
+ - Intended to be callable from multiple pipeline stages without introducing coupling.
 """
 
 from __future__ import annotations

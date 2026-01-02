@@ -1,15 +1,16 @@
 """
-scripts/plot_added_variable_panel.py
+Generate added-variable (partial regression) diagnostic plots.
 
-Research-grade added-variable (partial regression) panel:
- - produces per-variable individual plots and a combined panel
- - writes outputs under: reports/plot_added_variable_panel/
-    - files/  -> combined panel: plot_added_variable_panel.(png|pdf|svg)
-    - individuals/ -> av_<var>.(png|pdf|svg)
- - writes metadata JSON with provenance (features sha, git commit if available, produced files)
+Produces:
+ - reports/plot_added_variable_panel/plot_added_variable_panel.(png|pdf|svg)
+ - reports/plot_added_variable_panel/individuals/av_<var>.(png|pdf|svg)
+ - provenance metadata JSON describing inputs and generated files
 
-
+Design notes:
+ - Generates both per-variable and combined added-variable diagnostics.
+ - Records provenance information for reproducibility.
 """
+
 from __future__ import annotations
 import argparse
 from pathlib import Path

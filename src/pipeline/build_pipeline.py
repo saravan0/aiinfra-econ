@@ -1,24 +1,13 @@
-# src/pipeline/build_pipeline.py
 """
-Pipeline orchestrator (Phase 1)
+Orchestrate execution of the canonical data preparation pipeline.
 
-Runs the main data pipeline stages in order, preferring direct function calls
-into polished modules when available and falling back to subprocess execution
-for modules that don't expose an importable entrypoint.
+Produces:
+ - data_manifest.json (hashes and sizes of key generated artifacts)
 
-Usage:
-  python -m src.pipeline.build_pipeline            # run full pipeline
-  python -m src.pipeline.build_pipeline --steps harmonize,master,clean
-  python -m src.pipeline.build_pipeline --skip safe_transforms
-
-Steps (default order):
-  harmonize -> build_master -> clean_master -> verify -> features ->
-  lock_schema -> metadata -> safe_transforms -> safe_transforms_vif
-
-Design:
-  - Conservative: stops on first error
-  - Produces data_manifest.json listing key produced artifacts (sha1 + size)
-  - Logs each step with timestamps (good for CI / reviewers)
+Design notes:
+ - Executes pipeline stages sequentially and halts on first failure.
+ - Prefers direct function invocation, with subprocess fallbacks when required.
+ - Records step-level execution metadata for reproducibility and auditability.
 """
 
 from __future__ import annotations

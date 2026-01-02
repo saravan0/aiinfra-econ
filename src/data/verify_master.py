@@ -1,6 +1,5 @@
-# src/data/verify_master_structure.py
 """
-Generate verification reports for the master table (wgi_econ_master.csv).
+Generate structural verification reports for the canonical master table.
 
 Produces:
  - data/interim/verify_missingness.csv
@@ -8,8 +7,9 @@ Produces:
  - data/interim/verify_country_coverage.csv
  - data/interim/verify_value_stats.csv
 
-Each artifact is checksum-recorded via src.utils.data_registry.record_artifact
-so provenance is available for reviewers.
+Design notes:
+ - Verifies coverage, missingness, and basic value distributions.
+ - Records provenance for each artifact via src.utils.data_registry.record_artifact.
 """
 
 from __future__ import annotations

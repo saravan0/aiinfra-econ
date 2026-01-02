@@ -1,17 +1,17 @@
-# src/data/predictor_imputation.py
 """
-Controlled imputation layer for predictors.
+Controlled imputation layer for predictor variables.
 
-Rules:
- - coverage > 0.70  -> country-mean imputation for missing values
- - 0.50 <= coverage <= 0.70 -> global-mean imputation
- - coverage < 0.50 -> mark as 'drop' (do not impute automatically)
-
-Outputs:
- - data/processed/features_lean_imputed.csv  (imputed file)
+Produces:
+ - data/processed/features_lean_imputed.csv
  - reports/imputation_manifest.json
  - reports/imputation_summary.csv
+
+Imputation rules:
+ - coverage > 0.70        → country-mean imputation
+ - 0.50 ≤ coverage ≤ 0.70 → global-mean imputation
+ - coverage < 0.50        → variable flagged for exclusion
 """
+
 from __future__ import annotations
 from pathlib import Path
 import json

@@ -1,16 +1,14 @@
-# src/data/feature_engineer.py
 """
-Feature engineering for the wgi_econ_master dataset.
+Feature engineering for the canonical WGI–economic master dataset.
 
 Produces:
  - data/processed/features.csv
 
-Design choices (admissions-relevant):
- - Conservative transforms only (log1p for positive monetary variables).
- - Explicit handling of per-country rolling/statistics (temp anomaly rolling mean).
- - Conservative imputations: country-mean imputation for WGI pillars only when missingness is moderate (<40%).
- - Adds lags for key predictors to support modeling and interpretation.
- - Records provenance (md5 + sources.yaml) for the output artifact (if registry available).
+Design notes:
+ - Applies a restrained set of deterministic transformations.
+ - Introduces lagged predictors where required for modeling.
+ - Handles missingness using explicit, rule-based procedures.
+ - Records provenance for the generated feature artifact when supported.
 """
 
 from __future__ import annotations

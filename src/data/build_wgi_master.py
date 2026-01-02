@@ -1,16 +1,15 @@
-# src/data/build_wgi_econ_master.py
 """
-Build a merged WGI table from individual WGI indicator CSVs.
+Builds a merged WGI governance table from individual indicator CSVs.
 
-This module:
-- loads each WGI csv (voice, political stability, gov effectiveness, ...)
-- renames detected key columns to canonical names (country, iso3, year, <indicator>)
-- reduces duplicates and performs an outer merge on (iso3, year)
-- writes the merged table to data/interim/wgi_merged.csv
+Produces:
+ - data/interim/wgi_merged.csv
 
-Note: we intentionally DO NOT record canonical provenance (sources.yaml) here.
-Provenance for the final econ master will be recorded later in build_master_final.
+Design notes:
+ - Indicator files are standardized to canonical keys (iso3, year).
+ - Indicators are merged using an outer join on (iso3, year).
+ - Provenance is intentionally deferred to the final master builder.
 """
+
 
 from __future__ import annotations
 

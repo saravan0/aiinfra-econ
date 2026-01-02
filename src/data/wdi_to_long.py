@@ -1,20 +1,14 @@
-# src/data/wdi_clean_long.py
 """
-Create a canonical long-form WDI table (data/interim/wdi_long.csv).
+Create a canonical long-form WDI table from raw World Bank CSV exports.
 
-Behavior:
-- Detect file encoding and header row heuristically (robust to World Bank CSV variants).
-- Read the CSV with the detected header and melt wide year-columns to long format.
-- Normalize column names to a small canonical set: country, iso3, indicator_name, indicator_code, year, value.
-- Record provenance (md5 + sources.yaml) using src.utils.data_registry.record_artifact.
+Produces:
+ - data/interim/wdi_long.csv
 
-Usage (recommended):
-    # from project root
-    python -m src.data.wdi_clean_long
-
-Admissions angle (why this matters):
-This routine shows careful, reproducible handling of messy cross-country time-series exports
-— a clear signal of real-world research readiness expected from top applicants.
+Design notes:
+ - Detects file encoding and header rows to accommodate source CSV variants.
+ - Reshapes wide year-based columns into long format.
+ - Normalizes column names to a canonical schema.
+ - Records provenance for the generated artifact.
 """
 
 from __future__ import annotations

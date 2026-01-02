@@ -1,14 +1,19 @@
-#!/usr/bin/env python3
 """
-Elite SHAP diagnostics for ElasticNet (exact linear SHAP on scaled X).
+Generate SHAP-based interpretability diagnostics for ElasticNet models.
 
-Outputs:
-  reports/plot_shap_elasticnet/files/shap_summary.(pdf|svg|png)
-  reports/plot_shap_elasticnet/files/shap_dependence_<feature>.(pdf|svg|png)
-  reports/plot_shap_elasticnet/files/shap_feature_importance.csv
-  reports/plot_shap_elasticnet/meta.json
-  reports/plot_shap_elasticnet/manifest.json
+Produces:
+ - reports/plot_shap_elasticnet/files/shap_summary.(pdf|svg|png)
+ - reports/plot_shap_elasticnet/files/shap_dependence_<feature>.(pdf|svg|png)
+ - reports/plot_shap_elasticnet/files/shap_feature_importance.csv
+ - reports/plot_shap_elasticnet/meta.json
+ - reports/plot_shap_elasticnet/manifest.json
+
+Design notes:
+ - Computes feature attribution values using linear SHAP methods.
+ - Generates summary, dependence, and importance diagnostics.
+ - Records provenance information for reproducibility.
 """
+
 from __future__ import annotations
 
 import argparse

@@ -1,21 +1,17 @@
-#!/usr/bin/env python3
 """
-scripts/check_feature_diagnostics.py
+Feature-level diagnostic checks and correlation analysis.
 
-Research-grade feature diagnostics:
- - correlation matrix (CSV)
- - correlation heatmap (PNG)
- - per-feature diagnostics CSV + markdown report
+Produces:
+ - reports/correlation_matrix.csv
+ - reports/correlation_heatmap.png
+ - reports/feature_diagnostics.csv
+ - reports/feature_diagnostics.md
 
-Usage:
-  python scripts/check_feature_diagnostics.py --features data/processed/features_lean_imputed.csv
-
-Outputs (default):
-  reports/correlation_matrix.csv
-  reports/correlation_heatmap.png
-  reports/feature_diagnostics.csv
-  reports/feature_diagnostics.md
+Design notes:
+ - Computes pairwise correlations and summary diagnostics for modeled features.
+ - Generates tabular and visual outputs for inspection and reporting.
 """
+
 from __future__ import annotations
 import argparse
 from pathlib import Path

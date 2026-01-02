@@ -1,16 +1,15 @@
-# src/data/clean_master.py
 """
-Clean and canonicalize the raw WGI-econ master into:
- - data/interim/wgi_econ_master.csv    (cleaned master)
- - data/interim/panel_union.csv        (same as master; kept for pipeline compatibility)
- - data/interim/panel_core.csv         (core panel for modeling: iso3, year, gdp + at least one WGI pillar)
+Clean and canonicalize the raw WGI–economic master table.
 
-Notes / admissions angle:
-This step documents conservative, reproducible decisions about canonical country selection,
-column renaming and the construction of a model-ready "core" panel. Admissions reviewers
-look for clear, defensible rules like these in research portfolios.
+Produces:
+ - data/interim/wgi_econ_master.csv   (cleaned canonical master)
+ - data/interim/panel_union.csv       (full panel retained for pipeline compatibility)
+ - data/interim/panel_core.csv        (model-ready core panel with required variables)
 
-Provenance for the final econ master will be recorded later in build_master.
+Design notes:
+ - Applies conservative, reproducible filtering and renaming rules.
+ - Enforces consistent country identifiers and time indexing.
+ - Constructs a minimal core panel suitable for downstream modeling.
 """
 
 from __future__ import annotations

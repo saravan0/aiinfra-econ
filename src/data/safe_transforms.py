@@ -1,18 +1,19 @@
 """
-Safe transforms, monetary-scale diagnostics, correlations, and VIF exports.
+Safe numeric transforms and diagnostic exports for the canonical dataset.
 
-Outputs (in data/interim):
-  - monetary_scale_check.csv
-  - top_correlations.csv
-  - vif.csv (if statsmodels available)
-  - safe_transforms_manifest.json (summary & md5s)
+Produces (in data/interim):
+ - monetary_scale_check.csv
+ - top_correlations.csv
+ - vif.csv (when supported)
+ - safe_transforms_manifest.json
 
-Design / Admissions notes:
- - Conservative numeric transforms only (log1p for strictly positive values)
- - Correlations exported as absolute correlations (top pairs)
- - VIF computed only when statsmodels available and sufficient full-case rows exist
- - Each artifact recorded via src.utils.data_registry.record_artifact (provenance)
+Design notes:
+ - Applies conservative numeric transforms (e.g., log1p for strictly positive values).
+ - Exports top absolute correlations for inspection.
+ - Computes VIF only when dependencies and sufficient complete cases are available.
+ - Records provenance for each generated artifact.
 """
+
 from __future__ import annotations
 
 import json

@@ -1,9 +1,3 @@
-"""
-Simple utilities for dataset provenance:
-- compute_md5(path): writes <path>.md5
-- update_sources_yaml(canonical_id, checksum): updates data/raw/sources.yaml
-"""
-
 from __future__ import annotations
 import hashlib
 import logging

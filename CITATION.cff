@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the accompanying research paper."
+title: "Reproducible AI Infrastructure for High-Dimensional Modeling"
+authors:
+  - family-names: Malempati
+    given-names: Saravan
+version: 1.0.0
+repository-code: https://github.com/saravan0/aiinfra-econ
+license: MIT

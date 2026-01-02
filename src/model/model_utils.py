@@ -1,15 +1,3 @@
-# src/model/model_utils.py
-"""
-Model utilities — reproducible artifact saving, compact summaries, and plotting helpers.
-
-Provides small, audit-friendly helpers used across model workflows:
-- deterministic artifact persistence with checksum + companion summary (.summary.json);
-- fail-safe saving (joblib with repr fallback) so artifacts are never silently lost;
-- concise human-readable model summaries for reproducibility notes;
-- a compact scatter+fit plotting helper for quick EDA and automated reporting.
-
-Keep this module minimal so its behavior is easy to describe in a methods/methodology section.
-"""
 from __future__ import annotations
 from pathlib import Path
 import json

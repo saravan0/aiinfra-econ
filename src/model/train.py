@@ -1,10 +1,15 @@
-# src/model/train.py
 """
-Model training & robustness runner — research-ready pipeline.
+Train baseline econometric and machine-learning models and generate reports.
 
-Runs OLS, country fixed-effects and ElasticNetCV baselines, saves
-artifacts and produces human-readable reports for reproducibility.
+Produces:
+ - trained model artifacts
+ - evaluation summaries and diagnostic reports
+
+Design notes:
+ - Executes OLS, country fixed-effects, and ElasticNet-based specifications.
+ - Persists outputs deterministically for downstream inspection.
 """
+
 from __future__ import annotations
 
 import argparse

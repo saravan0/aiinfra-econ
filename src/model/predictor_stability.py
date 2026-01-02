@@ -1,15 +1,18 @@
-# src/model/predictor_stability.py
 """
-Predictor stability & sample-size diagnostics.
+Predictor stability and sample-size diagnostics.
 
-Consumes:
+Inputs:
  - data/processed/features_lean.csv
  - data/processed/features_lean_imputed.csv  (optional)
 
 Produces:
  - reports/predictor_stability.csv
  - reports/predictor_stability.md
+
+Design notes:
+ - Evaluates stability of predictor availability across samples and time.
 """
+
 from __future__ import annotations
 from pathlib import Path
 import pandas as pd

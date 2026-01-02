@@ -1,20 +1,17 @@
-# src/data/build_master.py
 """
-Final master builder: combine WGI (governance) + WDI (economic) datasets
-into a single canonical master table.
+Master builder: combines WGI (governance) and WDI (economic) datasets
+into a single canonical country–year master table.
 
 Produces:
  - data/interim/wgi_econ_master_raw.csv
  - data/interim/wgi_econ_master_missingness.csv
 
-Design choices (brief):
- - mappings are read from data/raw/mappings/column_map.csv and are
-   used to translate WDI indicator codes -> master column names.
- - WGI merged table (data/interim/wgi_merged.csv) and WDI long (data/interim/wdi_long.csv)
-   are the canonical upstream artifacts produced earlier in the pipeline.
- - This step records provenance for the final master artifact (md5 + sources.yaml),
-   providing a single point a reviewer can verify.
+Design notes:
+ - WDI indicator codes are mapped via data/raw/mappings/column_map.csv.
+ - Upstream inputs are data/interim/wgi_merged.csv and data/interim/wdi_long.csv.
+ - Provenance for the master artifact is recorded (hashes and sources).
 """
+
 
 from __future__ import annotations
 

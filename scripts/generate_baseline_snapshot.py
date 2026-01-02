@@ -1,17 +1,19 @@
-#!/usr/bin/env python3
 """
-Deterministic baseline snapshot generator (final, reviewer-grade).
+Generate a deterministic baseline snapshot aggregating model outputs and diagnostics.
 
-Usage:
-  python scripts/generate_baseline_snapshot.py --config config/snapshot_config.json
+Produces:
+ - baseline_<var>.json
+ - generate_baseline_snapshot.json
+ - generate_baseline_snapshot.md
+ - model_comparison_table.csv
+ - meta.json
 
-This version:
- - extracts FE/OLS-style coefs from reports/model_table.csv (format: model,term,coef,...)
- - extracts ElasticNetCV coefs from reports/plot_elasticnet_paths/files/en_cv_selected_coefs.csv
- - maps rolling RMSE per-variable by column name matching
- - copies standardized / shap / lowess / provenance artifacts
- - writes baseline_<var>.json, generate_baseline_snapshot.json, model_comparison_table.csv, generate_baseline_snapshot.md, meta.json
+Design notes:
+ - Aggregates coefficient estimates and forecast metrics across model families.
+ - Collects standardized diagnostics, interpretability outputs, and provenance records.
+ - Writes a canonical snapshot suitable for reproducible inspection.
 """
+
 from __future__ import annotations
 
 import argparse

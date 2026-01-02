@@ -1,25 +1,20 @@
-#!/usr/bin/env python3
 """
-scripts/extract_variable_effects.py
+Extract per-variable effect summaries from fitted model artifacts.
 
-Hybrid variable effect extraction (research-grade, provenance-rich).
+Produces:
+ - outputs/variables/<var>/
+     - <var>_summary.json
+     - <var>_summary.md
+     - <var>_summary.csv
+ - outputs/variables/summary_table.csv
+ - outputs/variables/manifest.json
 
-Produces per-variable outputs:
-  outputs/variables/<var>/
-    - <var>_summary.json
-    - <var>_summary.md
-    - <var>_summary.csv
-
-Also:
-  - outputs/variables/summary_table.csv
-  - outputs/variables/manifest.json
-
-Design:
- - FE_within: within-entity demean (aligned with config/model.yml if present) — IRREFUTABLE.
- - FE_artifact: attempt to extract coefficient from saved fe artifact (if available) using careful heuristics.
- - OLS: exact-name mapping from ols_result artifact.
- - ElasticNet: inspect pipeline, unscale coef_ to raw units and map by feature name.
+Design notes:
+ - Aggregates effect estimates across multiple model families.
+ - Resolves coefficients from saved artifacts using model-specific logic.
+ - Writes both machine-readable and human-readable summaries.
 """
+
 from __future__ import annotations
 import argparse
 import json

@@ -1,18 +1,13 @@
-#!/usr/bin/env python3
 """
-run_fe_demean.py (aligned mode, grouped output)
+Run within-entity fixed-effects (demeaned) diagnostics.
 
-Runs within-demean FE checks but **optionally aligns the sample** with the FE design used in train.py.
+Produces:
+ - outputs/fe_within/ (figures, tables, and saved artifacts)
 
-All outputs are now written into:
-    outputs/fe_within/
-
-Usage:
-  # recommended (align with FE baseline predictors)
-  python scripts/run_fe_demean.py --align-with-fe
-
-  # minimal mode
-  python scripts/run_fe_demean.py --vars trade_exposure gov_index_zmean inflation_consumer_prices_pct --no-align
+Design notes:
+ - Computes within-entity transformations for fixed-effects inspection.
+ - Supports optional alignment with the baseline fixed-effects specification.
+ - Records outputs in a grouped directory for reproducibility.
 """
 
 from pathlib import Path
@@ -22,9 +17,6 @@ import pandas as pd
 import statsmodels.api as sm
 from datetime import datetime, timezone
 
-# ----------------------------------------------------------------------
-# CONSTANTS
-# ----------------------------------------------------------------------
 DEFAULT_FEATURES = Path("data/processed/features_lean_imputed.csv")
 CONFIG_PATH = Path("config/model.yml")
 
@@ -37,13 +29,10 @@ GROUP_COL = "iso3"
 TARGET = "gdp_growth_pct"
 
 
-# ----------------------------------------------------------------------
 def write_json(p: Path, obj):
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf8")
 
-
-# ----------------------------------------------------------------------
 def run_within_demean(df: pd.DataFrame, group: str, target: str, var: str):
     cols = [group, target, var]
     sub = df[cols].dropna().copy()
@@ -73,7 +62,6 @@ def run_within_demean(df: pd.DataFrame, group: str, target: str, var: str):
     }
 
 
-# ----------------------------------------------------------------------
 def load_baseline_predictors_from_config(cfg_path: Path):
     if not cfg_path.exists():
         return None
@@ -98,7 +86,6 @@ def load_baseline_predictors_from_config(cfg_path: Path):
         return None
 
 
-# ----------------------------------------------------------------------
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--vars", nargs="+", default=VARS_DEFAULT)
@@ -167,7 +154,5 @@ def main():
     write_json(OUTDIR / "fe_within_summary.json", results)
     print("Wrote outputs to:", OUTDIR)
 
-
-# ----------------------------------------------------------------------
 if __name__ == "__main__":
     main()

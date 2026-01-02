@@ -1,17 +1,15 @@
-# src/data/lock_schema.py
 """
 Lock a stable, minimal feature schema for downstream modeling.
 
 Produces:
-  - data/processed/features_lean.csv
-  - data/processed/features_lean_schema.json
+ - data/processed/features_lean.csv
+ - data/processed/features_lean_schema.json
 
-Design Notes (admissions-grade):
-  - Uses project-root resolution (not current working directory).
-  - Separates critical vs optional variables.
-  - Emits schema-level md5 digest for drift detection.
-  - Logs missing variables with severity tiers.
-  - Ensures deterministic column order.
+Design notes:
+ - Separates required and optional variables.
+ - Enforces deterministic column ordering.
+ - Emits schema-level hashes to detect drift.
+ - Logs missing or unexpected variables during schema enforcement.
 """
 
 from __future__ import annotations

@@ -1,19 +1,16 @@
-#!/usr/bin/env python3
 """
-Elite LOWESS + GAM nonlinear diagnostics with bootstrap CIs and cluster block-bootstrap.
+Generate nonlinear diagnostics using LOWESS and GAM-based smoothing.
 
-Upgrades:
- - pointwise LOWESS bootstrap CIs (--bootstrap, --n-boot)
- - cluster block-bootstrap by entity (--cluster-by, --cluster-bootstrap)
- - frac-sensitivity envelope (--frac-grid)
- - cache bootstrap results to avoid recompute
- - optional subsample for heavy GAM fitting (--max-fit-n)
- - outputs per-feature (PDF/SVG/PNG) in results/plot_lowess_nonlinearity/<feature>/
- - manifest with features SHA + git rev + bootstrap metadata saved in JSONs
+Produces:
+ - results/plot_lowess_nonlinearity/<feature>/ (per-feature figures and summaries)
+ - manifest JSON files recording provenance and diagnostic metadata
 
-NOTE: This script can be compute-heavy if you request large bootstrap counts or
-full GAM gridsearch in each replicate. Use --max-fit-n to subsample for GAM.
+Design notes:
+ - Estimates nonlinear response curves using local smoothing and spline-based models.
+ - Supports uncertainty estimation via resampling-based procedures.
+ - Records provenance information for reproducibility.
 """
+
 from __future__ import annotations
 
 import argparse

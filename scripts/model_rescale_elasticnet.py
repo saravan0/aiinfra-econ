@@ -1,4 +1,3 @@
-# scripts/rescale_en_coefs.py
 import joblib, json
 from pathlib import Path
 import numpy as np

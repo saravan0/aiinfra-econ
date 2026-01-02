@@ -1,14 +1,16 @@
-#!/usr/bin/env python3
 """
-scripts/generate_onepager_compositor.py
+Compose finalized one-pager figures and accompanying metadata.
 
-Polished compositor:
- - Core plate: 3x stacked slots (top / middle / bottom) with thin outlines + titles.
- - Support plate: 2x3 grid with thin outlines, left column = (qq, en_path, av_trade), right column = (av_infl, comparative, partial_gov).
- - PNG + SVG outputs -> reports/onepager/files/
- - metadata.json + manifest.json -> reports/onepager/
- - Does not change the ONEPAGER_MD_TEXT content (writes markdown to reports/onepager/files/onepager.md)
+Produces:
+ - reports/onepager/files/ (PNG and SVG plates, onepager.md)
+ - reports/onepager/metadata.json
+ - reports/onepager/manifest.json
+
+Design notes:
+ - Composes core and support figure plates from existing plot artifacts.
+ - Preserves the canonical markdown content without modification.
 """
+
 from __future__ import annotations
 
 import argparse
